@@ -1,0 +1,24 @@
+[gd_resource type="Shader" format=2]
+
+[resource]
+code = "shader_type canvas_item;
+
+uniform float strength : hint_range(1.0, 5.0) = 1.0;
+
+void fragment() {
+    // Calculate the aspect ratio of the texture
+    float aspect_ratio = float(textureSize(TEXTURE, 0).y) / float(textureSize(TEXTURE, 0).x);
+    
+    // Calculate the distorted UV coordinates
+    vec2 p = (2.0 * UV - 1.0) * vec2(1.0, aspect_ratio);
+    float r = length(p);
+    
+    // Apply the fish-eye effect
+    vec2 distortedUV = (p / r) * pow(r, strength);
+    
+    // Map the distorted UV coordinates back to [0, 1] range
+    distortedUV = (distortedUV + 1.0) * 0.5;
+    
+    // Sample the texture using the distorted UV coordinates
+    COLOR = texture(TEXTURE, distortedUV);
+}"

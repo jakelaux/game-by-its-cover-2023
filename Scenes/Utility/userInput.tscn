@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/InputHandler.gd" type="Script" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+[node name="inputHandler" type="Node2D"]
+position = Vector2( 400, 500 )
+script = ExtResource( 2 )
+
+[node name="userInput" type="HBoxContainer" parent="."]
+visible = false
+
+[node name="caret" type="Label" parent="userInput"]
+margin_right = 8.0
+margin_bottom = 14.0
+text = ">"
+
+[node name="input" type="LineEdit" parent="userInput"]
+margin_left = 12.0
+margin_right = 60.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+custom_styles/normal = SubResource( 1 )
+max_length = 50
+
+[node name="validation" type="VBoxContainer" parent="."]
+visible = false
+
+[node name="label" type="Label" parent="validation"]
+margin_bottom = 14.0
+size_flags_horizontal = 0
+
+[node name="Yes" type="Button" parent="validation/label"]
+margin_left = -5.0
+margin_top = 16.0
+margin_right = 29.0
+margin_bottom = 36.0
+text = "Yes"
+
+[node name="No" type="Button" parent="validation/label"]
+margin_left = 31.0
+margin_top = 16.0
+margin_right = 61.0
+margin_bottom = 36.0
+text = "No"
+
+[node name="waitForFade" type="Timer" parent="."]
+one_shot = true
+autostart = true
+
+[connection signal="text_entered" from="userInput/input" to="." method="_on_input_text_entered"]
+[connection signal="pressed" from="validation/label/Yes" to="." method="_on_Yes_pressed"]
+[connection signal="pressed" from="validation/label/No" to="." method="_on_No_pressed"]
+[connection signal="timeout" from="waitForFade" to="." method="_on_waitForFade_timeout"]

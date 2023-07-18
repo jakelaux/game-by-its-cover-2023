@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/bwoing4.wav-bb5e6816bf401b6377a7bd88c874c6cf.sample"
+
+[deps]
+
+source_file="res://Audio/dialog/bwoings/bwoing4.wav"
+dest_files=[ "res://.import/bwoing4.wav-bb5e6816bf401b6377a7bd88c874c6cf.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

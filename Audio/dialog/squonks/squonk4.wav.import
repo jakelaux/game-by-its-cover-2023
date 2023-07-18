@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/squonk4.wav-6945ab279f74a2a9044a8455fef91922.sample"
+
+[deps]
+
+source_file="res://Audio/dialog/squonks/squonk4.wav"
+dest_files=[ "res://.import/squonk4.wav-6945ab279f74a2a9044a8455fef91922.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

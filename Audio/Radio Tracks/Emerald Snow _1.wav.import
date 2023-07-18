@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Emerald Snow _1.wav-917e488143dd4df5302f264ef9833693.sample"
+
+[deps]
+
+source_file="res://Audio/Radio Tracks/Emerald Snow _1.wav"
+dest_files=[ "res://.import/Emerald Snow _1.wav-917e488143dd4df5302f264ef9833693.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
