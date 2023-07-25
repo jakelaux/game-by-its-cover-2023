@@ -14,7 +14,7 @@
 			"volume": -10
 		},
 		{
-			"animation": "back_in_left.gd",
+			"animation": "1-fade_in.gd",
 			"animation_length": 1,
 			"change_mirror_portrait": false,
 			"change_z_index": false,
@@ -208,7 +208,7 @@
 			"text": "Wonderful! Thanks."
 		},
 		{
-			"animation": "back_out_left.gd",
+			"animation": "4-fade_out.gd",
 			"animation_length": 1,
 			"animation_wait": true,
 			"change_mirror_portrait": false,
@@ -280,6 +280,126 @@
 		},
 		{
 			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1690245371-386",
+			"event_id": "dialogic_012",
+			"value": "no"
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1690242511.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1690242511.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Hmm, beans...yes"
+		},
+		{
+			"choice": "You good? I heard a lot of...commotion",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "That's 99 cents. Thanks.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"animation": "4-fade_out.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1690242511.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"call_node": {
+				"arguments": [
+					"6"
+				],
+				"method_name": "blur_vision",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": false,
+			"wait_seconds": 4
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "My eyes..."
+		},
+		{
+			"choice": "rub your eyes",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "smack your head on the counter in front of you",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "shake your head",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
 		},
 		{
 			"event_id": "dialogic_013"

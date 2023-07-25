@@ -1,7 +1,7 @@
 {
 	"events": [
 		{
-			"animation": "back_in_left.gd",
+			"animation": "1-fade_in.gd",
 			"animation_length": 1,
 			"change_mirror_portrait": false,
 			"change_z_index": false,
@@ -212,7 +212,7 @@
 			"event_id": "dialogic_013"
 		},
 		{
-			"animation": "back_out_right.gd",
+			"animation": "4-fade_out.gd",
 			"animation_length": 1,
 			"animation_wait": true,
 			"change_mirror_portrait": false,

@@ -12,7 +12,7 @@
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 7 )
-shader_param/blur_amount = 0.56
+shader_param/blur_amount = 1.261
 
 [sub_resource type="ShaderMaterial" id=2]
 shader = ExtResource( 5 )
@@ -40,6 +40,10 @@ script = ExtResource( 1 )
 [node name="Tween" type="Tween" parent="."]
 
 [node name="SanityTimer" type="Timer" parent="."]
+process_mode = 0
+one_shot = true
+
+[node name="blurTimer" type="Timer" parent="."]
 process_mode = 0
 one_shot = true
 
@@ -92,5 +96,6 @@ offset = Vector2( 540, 360 )
 [node name="MenuScreen" parent="." instance=ExtResource( 10 )]
 
 [connection signal="timeout" from="SanityTimer" to="." method="_on_SanityTimer_timeout"]
+[connection signal="timeout" from="blurTimer" to="." method="_on_blurTimer_timeout"]
 
 [editable path="Background"]

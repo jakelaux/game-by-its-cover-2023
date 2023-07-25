@@ -13,6 +13,7 @@ onready var glitch			= $Shaders/GlitchShader
 onready var wiggle			= $Shaders/ScreenNoiseShader
 onready var sanity			= $Shaders/SanityShader
 onready var sanity_timer	= $SanityTimer
+onready var blur_timer		= $blurTimer
 onready var radio			= $Radio
 onready var background		= $Background
 onready var tween			= $Tween
@@ -85,7 +86,15 @@ func get_noise_offset(delta,speed,strength):
 		noise.get_noise_2d(100,noise_i)*strength
 	)
 
+func blur_vision(value):
+	blur.visible = true
+	blur_timer.wait_time = int(value)
+	blur_timer.start()
+
 func _on_SanityTimer_timeout():
 	shake = "SWAY"
 	glitch.visible = false
 	sanity.visible = false
+
+func _on_blurTimer_timeout():
+	blur.visible = false
