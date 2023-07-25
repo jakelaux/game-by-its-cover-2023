@@ -9,23 +9,28 @@ position = Vector2( 400, 500 )
 script = ExtResource( 2 )
 
 [node name="userInput" type="HBoxContainer" parent="."]
-visible = false
+
+[node name="ColorRect" type="ColorRect" parent="userInput"]
+margin_left = -5.0
+margin_right = 155.0
+margin_bottom = 15.0
+color = Color( 0, 0, 0, 1 )
 
 [node name="caret" type="Label" parent="userInput"]
-margin_right = 8.0
+margin_left = 4.0
+margin_right = 12.0
 margin_bottom = 14.0
 text = ">"
 
 [node name="input" type="LineEdit" parent="userInput"]
-margin_left = 12.0
-margin_right = 60.0
+margin_left = 16.0
+margin_right = 64.0
 margin_bottom = 14.0
 size_flags_horizontal = 3
 custom_styles/normal = SubResource( 1 )
 max_length = 50
 
 [node name="validation" type="VBoxContainer" parent="."]
-visible = false
 
 [node name="label" type="Label" parent="validation"]
 margin_bottom = 14.0

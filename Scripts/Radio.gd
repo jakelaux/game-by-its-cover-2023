@@ -17,6 +17,7 @@ var songs
 var bumps
 
 func _ready():
+	randomize()
 	songs = [song1,song2,song3,song4,song5]
 	bumps = [bump1,bump2,bump3,bump4,bump5]
 	songs.shuffle()

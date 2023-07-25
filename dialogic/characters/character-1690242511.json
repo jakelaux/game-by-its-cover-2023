@@ -1,0 +1,21 @@
+{
+	"color": "#ffffffff",
+	"description": "",
+	"display_name": "Odd Man",
+	"display_name_bool": true,
+	"id": "character-1690242511.json",
+	"mirror_portraits": true,
+	"name": "TimeTraveler.json",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Assets/Portraits/time-traveler.png"
+		}
+	],
+	"scale": 35,
+	"theme": ""
+}

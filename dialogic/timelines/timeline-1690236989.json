@@ -1,0 +1,245 @@
+{
+	"events": [
+		{
+			"animation": "back_in_left.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1690237009.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"character": "character-1690237009.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I seem to have misplaced something around here."
+		},
+		{
+			"character": "character-1690237009.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "But I think I'm a little too early...or maybe too late...to get it back from you."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644546.cfg"
+		},
+		{
+			"character": "character-1690237009.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ahh not what I was looking for. But, hmm, yes."
+		},
+		{
+			"character": "character-1690237009.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": " She rummages through her pockets and pulls out a deck of tarot cards."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644546.cfg"
+		},
+		{
+			"character": "character-1690237009.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "She looks you up and down."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"character": "character-1690237009.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yes, you're long due for a reading."
+		},
+		{
+			"character": "character-1690237009.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ahh not what I was looking for. But, hmm, yes."
+		},
+		{
+			"character": "character-1690237009.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "She looks you up and down."
+		},
+		{
+			"character": "character-1690237009.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Yes, you're long due for a reeding"
+		},
+		{
+			"choice": "Ohh cool!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Not usually my thing but okay...",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Fine. Whatever.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1690237009.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "What card is calling to you my child?"
+		},
+		{
+			"choice": "Justice",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1690238927-374",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "justice"
+		},
+		{
+			"choice": "Hanged Man",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1690238927-374",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "hanged_man"
+		},
+		{
+			"choice": "The Hermit",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1690238927-374",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "hermit"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1690237009.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "[tarot_card]"
+		},
+		{
+			"choice": "That sounds...alarming",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Whatever.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "I'd pay for your services but I'm broke until Friday.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"animation": "back_out_right.gd",
+			"animation_length": 1,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1690237009.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"change_timeline": "timeline-1690242485.json",
+			"event_id": "dialogic_020"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1690236989.json",
+		"name": "psychicIntro"
+	}
+}

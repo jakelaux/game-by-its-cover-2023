@@ -5,6 +5,10 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Oh yeah, that's right. I'm [player_name]..."
+		},
+		{
+			"change_timeline": "timeline-1690236989.json",
+			"event_id": "dialogic_020"
 		}
 	],
 	"metadata": {

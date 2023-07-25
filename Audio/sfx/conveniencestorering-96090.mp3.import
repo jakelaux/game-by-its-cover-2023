@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/conveniencestorering-96090.mp3-faf276acfe5d4067fa19e06b64ef2813.mp3str"
+
+[deps]
+
+source_file="res://Audio/sfx/conveniencestorering-96090.mp3"
+dest_files=[ "res://.import/conveniencestorering-96090.mp3-faf276acfe5d4067fa19e06b64ef2813.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
