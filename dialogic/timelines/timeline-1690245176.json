@@ -1,6 +1,105 @@
 {
 	"events": [
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
+		},
+		{
+			"call_node": {
+				"arguments": [
 
+				],
+				"method_name": "blur_vision",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "[shake rate=20.0 level=5 connected=1]My eyes...[/shake]"
+		},
+		{
+			"choice": "Rub your eyes",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1690344155-942",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "rub"
+		},
+		{
+			"choice": "Smack your head on the counter in front of you",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1690344155-942",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "smack"
+		},
+		{
+			"choice": "Shake your head",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1690344155-942",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "shake"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"condition": "",
+			"definition": "1690344155-942",
+			"event_id": "dialogic_012",
+			"value": "rub"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "As you rub your eyes you hear\n\n[shake rate=20.0 level=5 connected=1]Why not just pluck your eyes straight out of your head?.[/shake]"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "unblur_vision",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		}
 	],
 	"metadata": {
 		"dialogic-version": "1.4.5",

@@ -10,8 +10,8 @@
 			"audio_bus": "SFX",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
-			"file": "res://Audio/sfx/conveniencestorering-96090.mp3",
-			"volume": -10
+			"file": "res://Audio/sfx/enter_store_w_steps.wav",
+			"volume": -5
 		},
 		{
 			"animation": "1-fade_in.gd",
@@ -354,55 +354,16 @@
 			"z_index": 0
 		},
 		{
-			"call_node": {
-				"arguments": [
-					"6"
-				],
-				"method_name": "blur_vision",
-				"target_node_path": "/root/World"
-			},
-			"event_id": "dialogic_042"
-		},
-		{
 			"event_id": "dialogic_013"
 		},
 		{
 			"event_id": "dialogic_023",
-			"hide_dialogbox": false,
+			"hide_dialogbox": true,
 			"wait_seconds": 4
 		},
 		{
-			"character": "",
-			"event_id": "dialogic_010",
-			"options": [
-
-			],
-			"portrait": "",
-			"question": "My eyes..."
-		},
-		{
-			"choice": "rub your eyes",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"choice": "smack your head on the counter in front of you",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"choice": "shake your head",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"event_id": "dialogic_013"
+			"change_timeline": "timeline-1690245176.json",
+			"event_id": "dialogic_020"
 		}
 	],
 	"metadata": {

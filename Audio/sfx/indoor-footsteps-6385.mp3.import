@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/indoor-footsteps-6385.mp3-636c21a2c0e3b483f3c4c04090b5af37.mp3str"
+
+[deps]
+
+source_file="res://Audio/sfx/indoor-footsteps-6385.mp3"
+dest_files=[ "res://.import/indoor-footsteps-6385.mp3-636c21a2c0e3b483f3c4c04090b5af37.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

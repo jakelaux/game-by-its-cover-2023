@@ -1,6 +1,14 @@
 {
 	"events": [
 		{
+			"audio": "play",
+			"audio_bus": "SFX",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Audio/sfx/enter_store_w_steps.wav",
+			"volume": -5.05
+		},
+		{
 			"animation": "1-fade_in.gd",
 			"animation_length": 1,
 			"change_mirror_portrait": false,
@@ -37,18 +45,14 @@
 			"text": "But I think I'm a little too early...or maybe too late...to get it back from you."
 		},
 		{
-			"event_id": "dialogic_024",
-			"set_theme": "theme-1689644577.cfg"
-		},
-		{
-			"event_id": "dialogic_024",
-			"set_theme": "theme-1689644546.cfg"
-		},
-		{
 			"character": "character-1690237009.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Ahh not what I was looking for. But, hmm, yes."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
 		},
 		{
 			"character": "character-1690237009.json",
@@ -57,10 +61,6 @@
 			"text": " She rummages through her pockets and pulls out a deck of tarot cards."
 		},
 		{
-			"event_id": "dialogic_024",
-			"set_theme": "theme-1689644546.cfg"
-		},
-		{
 			"character": "character-1690237009.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -72,30 +72,12 @@
 		},
 		{
 			"character": "character-1690237009.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Yes, you're long due for a reading."
-		},
-		{
-			"character": "character-1690237009.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Ahh not what I was looking for. But, hmm, yes."
-		},
-		{
-			"character": "character-1690237009.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "She looks you up and down."
-		},
-		{
-			"character": "character-1690237009.json",
 			"event_id": "dialogic_010",
 			"options": [
 
 			],
 			"portrait": "",
-			"question": "Yes, you're long due for a reeding"
+			"question": "Yes, you're long due for a reading."
 		},
 		{
 			"choice": "Ohh cool!",

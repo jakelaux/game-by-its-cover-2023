@@ -4,12 +4,6 @@
 	],
 	"variables": [
 		{
-			"id": "1688696161-648",
-			"name": "player_name",
-			"type": 0,
-			"value": ""
-		},
-		{
 			"id": "1690238927-374",
 			"name": "tarot_card",
 			"type": 0,
@@ -22,14 +16,26 @@
 			"value": ""
 		},
 		{
-			"id": "1690244779-516",
-			"name": "can_have_key",
+			"id": "1688696161-648",
+			"name": "player_name",
 			"type": 0,
 			"value": ""
 		},
 		{
 			"id": "1690245371-386",
 			"name": "investigate_bathroom",
+			"type": 0,
+			"value": ""
+		},
+		{
+			"id": "1690244779-516",
+			"name": "can_have_key",
+			"type": 0,
+			"value": ""
+		},
+		{
+			"id": "1690344155-942",
+			"name": "eyes_blur_action",
 			"type": 0,
 			"value": ""
 		}
