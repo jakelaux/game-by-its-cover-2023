@@ -38,7 +38,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[shake rate=30.0 level=5 connected=1]Why not just pluck your eyes straight out of your head?.[/shake]"
+			"text": "[shake rate=30.0 level=5 connected=1]Why not just pluck your eyes straight out of your head?[/shake]"
 		},
 		{
 			"choice": "Smack your head on the counter in front of you",
@@ -230,7 +230,7 @@
 			"question": "You weave through the store's isles. Everything looks to be in order. But when you reach the back of the room, you notice the bathroom door is ajar."
 		},
 		{
-			"choice": "Weird. That should be closed. //Open the door.//",
+			"choice": "Weird. That should be closed. Step into the bathroom",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -243,7 +243,7 @@
 
 			],
 			"portrait": "",
-			"question": "The door creeks open. You inspect the space. The lid to the toilet is down.\nYou hear a voice say: Look inside."
+			"question": "The door creaks open. You inspect the space. The lid to the toilet is down.\nYou hear a voice say: Look inside."
 		},
 		{
 			"choice": "Gah! Okay. Wait, what? Uhh okay.",

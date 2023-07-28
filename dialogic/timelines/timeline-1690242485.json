@@ -130,7 +130,7 @@
 			"value": ""
 		},
 		{
-			"choice": "I have like 5 rubberbands...",
+			"choice": "I have like 5 rubber bands...",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -356,7 +356,7 @@
 			"question": "Thanks...I found the beans"
 		},
 		{
-			"choice": "You good? I heard a lot of...commotion",
+			"choice": "Are you good? I heard a lot of...commotion",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -418,7 +418,7 @@
 
 			],
 			"portrait": "",
-			"question": "A glowing light eminates through crack in the bottom of the door."
+			"question": "A glowing light emanates through a crack in the bottom of the door."
 		},
 		{
 			"choice": "Knock?",
@@ -434,10 +434,10 @@
 
 			],
 			"portrait": "",
-			"question": "You hesitate before giving the door three loud knocks.\n\"Just a minute!\""
+			"question": "You hesitate before giving the door three loud knocks.\nYou hear \"Just a minute!\" in response."
 		},
 		{
-			"choice": "bru, what's going on in there?",
+			"choice": "Bro, what's going on in there?",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -450,7 +450,7 @@
 
 			],
 			"portrait": "",
-			"question": "\"It's fine. Everything's fine. One more minute.\""
+			"question": "It's fine. Everything's fine. One more minute."
 		},
 		{
 			"choice": "uhh, okay",
@@ -466,7 +466,7 @@
 
 			],
 			"portrait": "",
-			"question": "The time traveler comes back from the bathroom. He slides a can of beans onto the counter and returns the key."
+			"question": "The man comes back from the bathroom. He slides a can of beans onto the counter and returns the key."
 		},
 		{
 			"choice": "That's 99 cents. Thanks.",
@@ -532,7 +532,7 @@
 
 			],
 			"portrait": "",
-			"question": "The time travelor comes back from the bathroom. He slides a can of beans onto the counter and returns the key. The key is twisted beyond rapair."
+			"question": "The man comes back from the bathroom. He slides a can of beans onto the counter and returns the key. The key is twisted beyond repair."
 		},
 		{
 			"choice": "He sheepishly slides a can of beans on the counter and says \"I'm taking this\".",
@@ -577,7 +577,7 @@
 			"event_id": "dialogic_013"
 		},
 		{
-			"choice": "Don't knock, that's wierd",
+			"choice": "Don't knock, that's wierd..",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",

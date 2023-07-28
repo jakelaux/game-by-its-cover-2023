@@ -162,7 +162,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[shake rate=30.0 level=5 connected=1]How long have you been behind this counter, alone? How long have you been alone. You're such a loner aren't you.[/shake]"
+			"text": "[shake rate=30.0 level=5 connected=1]How long have you been behind this counter, alone? How long have you been alone? You're such a loner aren't you.[/shake]"
 		},
 		{
 			"character": "",

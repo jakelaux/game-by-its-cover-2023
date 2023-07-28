@@ -48,6 +48,17 @@
 			"event_id": "dialogic_042"
 		},
 		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 0.5
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "What the hell was that…whatever here comes a customer…"
+		},
+		{
 			"change_timeline": "timeline-1690236989.json",
 			"event_id": "dialogic_020"
 		}
