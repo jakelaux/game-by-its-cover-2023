@@ -67,9 +67,8 @@ func _process(delta):
 	
 func damage_sanity():
 	shake = "SHAKE"
-	glitch.visible = true
-	sanity.visible = true
 	sanity_timer.start()
+	intrusive_thought()
 	
 func close_tutorial():
 	var tutorial_2 = Dialogic.start('Tutorial pt.2')
@@ -85,6 +84,14 @@ func get_noise_offset(delta,speed,strength):
 		noise.get_noise_2d(100,noise_i)*strength
 	)
 
+func intrusive_thought():
+	glitch.visible = true
+	sanity.visible = true
+
+func end_intrusive_thought():
+	glitch.visible = false
+	sanity.visible = false
+
 func blur_vision():
 	blur.visible = true
 
@@ -93,8 +100,6 @@ func unblur_vision():
 
 func _on_SanityTimer_timeout():
 	shake = "SWAY"
-	glitch.visible = false
-	sanity.visible = false
 
 func _on_blurTimer_timeout():
 	blur.visible = false

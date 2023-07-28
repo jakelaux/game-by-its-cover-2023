@@ -42,29 +42,17 @@
 			"character": "character-1690237009.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "But I think I'm a little too early...or maybe too late...to get it back from you."
-		},
-		{
-			"character": "character-1690237009.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Ahh not what I was looking for. But, hmm, yes."
+			"text": "Can you check the lost and found?"
 		},
 		{
 			"event_id": "dialogic_024",
 			"set_theme": "theme-1690342652.cfg"
 		},
 		{
-			"character": "character-1690237009.json",
+			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": " She rummages through her pockets and pulls out a deck of tarot cards."
-		},
-		{
-			"character": "character-1690237009.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "She looks you up and down."
+			"text": "You shuffle through the lost and found, find a deck of Tarot cards, and hold it out to the woman."
 		},
 		{
 			"event_id": "dialogic_024",
@@ -72,45 +60,42 @@
 		},
 		{
 			"character": "character-1690237009.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ahh I think that's mine!"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]She quickly snatches the deck from your hands.[/shake]"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "damage_sanity",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "",
 			"event_id": "dialogic_010",
 			"options": [
 
 			],
 			"portrait": "",
-			"question": "Yes, you're long due for a reading."
-		},
-		{
-			"choice": "Ohh cool!",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"choice": "Not usually my thing but okay...",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"choice": "Fine. Whatever.",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"event_id": "dialogic_013"
-		},
-		{
-			"character": "character-1690237009.json",
-			"event_id": "dialogic_010",
-			"options": [
-
-			],
-			"portrait": "",
-			"question": "What card is calling to you my child?"
+			"question": "She drops three cards on the counter"
 		},
 		{
 			"choice": "Justice",
@@ -118,6 +103,18 @@
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=30.0 level=5 connected=1]Your fate is sealed. Justice will make sure of that![/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=30.0 level=5 connected=1]Like a sword it will slash through you and your situation without regard to your wishes and the just choice will be made.[/shake]"
 		},
 		{
 			"definition": "1690238927-374",
@@ -135,6 +132,18 @@
 			"value": ""
 		},
 		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=30.0 level=5 connected=1]You only think about you. Every time you've been asked to cover a shift you're busy. Do you think Becky hasn't noticed?[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=30.0 level=5 connected=1]You have thrown away your chance at enlightenment and wallow in the swamp that is your life.[/shake]"
+		},
+		{
 			"definition": "1690238927-374",
 			"event_id": "dialogic_014",
 			"operation": "=",
@@ -150,6 +159,18 @@
 			"value": ""
 		},
 		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=30.0 level=5 connected=1]How long have you been behind this counter, alone? How long have you been alone. You're such a loner aren't you.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=30.0 level=5 connected=1]You justify it by saying you're looking within yourself...but I'm the only interesting part of you aren't I?[/shake]"
+		},
+		{
 			"definition": "1690238927-374",
 			"event_id": "dialogic_014",
 			"operation": "=",
@@ -161,16 +182,20 @@
 			"event_id": "dialogic_013"
 		},
 		{
-			"character": "character-1690237009.json",
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
+		},
+		{
+			"character": "",
 			"event_id": "dialogic_010",
 			"options": [
 
 			],
 			"portrait": "",
-			"question": "[tarot_card]"
+			"question": "AGHHH!?"
 		},
 		{
-			"choice": "That sounds...alarming",
+			"choice": "That was...alarming",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -184,7 +209,7 @@
 			"value": ""
 		},
 		{
-			"choice": "I'd pay for your services but I'm broke until Friday.",
+			"choice": "Another day another fortune",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -192,6 +217,45 @@
 		},
 		{
 			"event_id": "dialogic_013"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"character": "character-1690237009.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "...Ok...thanks I guess...you ok??"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1
+		},
+		{
+			"character": "character-1690237009.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nevermind I don't have time to deal with this right now...have a good night."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "SFX",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Audio/sfx/leave_store_w_steps.wav",
+			"volume": -5
 		},
 		{
 			"animation": "4-fade_out.gd",

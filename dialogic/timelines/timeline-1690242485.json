@@ -40,7 +40,7 @@
 
 			],
 			"portrait": "",
-			"question": "What year is it!?!?"
+			"question": "Uhhh...when is it!?!?"
 		},
 		{
 			"choice": "1865",
@@ -94,13 +94,24 @@
 			"character": "character-1690242511.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Hmmm, helloooo chap...would you happen to have a can of beans?"
+			"text": "Ohh....military time, cool cool..."
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1
 		},
 		{
 			"character": "character-1690242511.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Oh and a can opener for the beans...a live chicken, it must still be clucking!!"
+			"text": "Uh, do you have beans here? "
+		},
+		{
+			"character": "character-1690242511.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh and a can opener for the beans...a live chicken..."
 		},
 		{
 			"character": "character-1690242511.json",
@@ -109,7 +120,7 @@
 
 			],
 			"portrait": "",
-			"question": "  and oooo 10,000 rubber bands?!!?"
+			"question": " and uhhh...like 1000 rubber bands?"
 		},
 		{
 			"choice": "There are some beans in the back of the store",
@@ -138,7 +149,13 @@
 		{
 			"event_id": "dialogic_023",
 			"hide_dialogbox": true,
-			"wait_seconds": 1
+			"wait_seconds": 0.5
+		},
+		{
+			"character": "character-1690242511.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Cool, I'll go try to find some of the supplies I need...thanks"
 		},
 		{
 			"character": "character-1690242511.json",
@@ -147,7 +164,7 @@
 
 			],
 			"portrait": "",
-			"question": "Could I trouble you for the key to the bathroom?"
+			"question": "Oh, could I trouble you for the key to the bathroom?"
 		},
 		{
 			"choice": "Sure",
@@ -187,6 +204,27 @@
 			"definition": "1690244779-516",
 			"event_id": "dialogic_012",
 			"value": "no"
+		},
+		{
+			"animation": "4-fade_out.gd",
+			"animation_length": 1,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1690242511.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
 		},
 		{
 			"change_timeline": "timeline-1690245176.json",
@@ -232,7 +270,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "The odd man scuttles off to the bathroom."
+			"text": "The man scuttles off to the bathroom."
 		},
 		{
 			"event_id": "dialogic_023",
@@ -290,6 +328,7 @@
 		{
 			"animation": "1-fade_in.gd",
 			"animation_length": 1,
+			"animation_wait": true,
 			"change_mirror_portrait": false,
 			"change_z_index": false,
 			"character": "character-1690242511.json",
@@ -300,7 +339,7 @@
 			"position": {
 				"0": false,
 				"1": false,
-				"2": false,
+				"2": true,
 				"3": false,
 				"4": false
 			},
@@ -314,7 +353,7 @@
 
 			],
 			"portrait": "",
-			"question": "Hmm, beans...yes"
+			"question": "Thanks...I found the beans"
 		},
 		{
 			"choice": "You good? I heard a lot of...commotion",
@@ -332,6 +371,12 @@
 		},
 		{
 			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1690242511.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ok, bye"
 		},
 		{
 			"animation": "4-fade_out.gd",
@@ -355,6 +400,222 @@
 		},
 		{
 			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
+		},
+		{
+			"condition": "",
+			"definition": "1690245371-386",
+			"event_id": "dialogic_012",
+			"value": "yes"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "A glowing light eminates through crack in the bottom of the door."
+		},
+		{
+			"choice": "Knock?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "You hesitate before giving the door three loud knocks.\n\"Just a minute!\""
+		},
+		{
+			"choice": "bru, what's going on in there?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "\"It's fine. Everything's fine. One more minute.\""
+		},
+		{
+			"choice": "uhh, okay",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "The time traveler comes back from the bathroom. He slides a can of beans onto the counter and returns the key."
+		},
+		{
+			"choice": "That's 99 cents. Thanks.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Kick the door down",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You walk in on the time traveler taking a shit. Everything appears normal. The time traveler says nothing. He just stares at you blankly."
+		},
+		{
+			"definition": "1690501993-133",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "true"
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1690242511.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1
+		},
+		{
+			"character": "character-1690242511.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "The time travelor comes back from the bathroom. He slides a can of beans onto the counter and returns the key. The key is twisted beyond rapair."
+		},
+		{
+			"choice": "He sheepishly slides a can of beans on the counter and says \"I'm taking this\".",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Uhh, okay.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "The time traveler comes back from the bathroom. He slides a can of beans onto the counter and returns the key."
+		},
+		{
+			"choice": "That's 99 cents. Thanks.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Don't knock, that's wierd",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Audio/sfx/leave_store_w_steps.wav",
+			"volume": -5
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1690242511.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
 		},
 		{
 			"event_id": "dialogic_023",
