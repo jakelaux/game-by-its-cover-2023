@@ -52,8 +52,8 @@ one_shot = true
 [node name="Radio" parent="." instance=ExtResource( 4 )]
 
 [node name="Background" parent="." instance=ExtResource( 2 )]
-margin_top = -94.0
-margin_bottom = 1406.0
+margin_top = -46.0
+margin_bottom = 1258.0
 
 [node name="Shaders" type="CanvasLayer" parent="."]
 
