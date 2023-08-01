@@ -7,12 +7,6 @@
 			"text": "Oh yeah, that's right. I'm [player_name]..."
 		},
 		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Well...I'm up and not crying so...I guess I can make it through this shift"
-		},
-		{
 			"event_id": "dialogic_023",
 			"hide_dialogbox": true,
 			"wait_seconds": 1.5
@@ -66,7 +60,13 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "What the hell was that…whatever here comes a customer…"
+			"text": "What the hell was that…"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I think I see a customer coming…I'm awake and not crying so I guess it could be worse."
 		},
 		{
 			"change_timeline": "timeline-1690236989.json",

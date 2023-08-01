@@ -22,6 +22,35 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
+			"text": "I can't believe Becky made me take over working nights for her...but she makes the schedule so what the hell can I do about it..."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Plus...there are no other jobs in this shithole town...so whatever."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "My dad's the only reason I have this job...but he picked Becky over me to run the place. "
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "ugh..."
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 2
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
 			"text": "I'm so tired, I can barely remember my name...what is it again?"
 		},
 		{

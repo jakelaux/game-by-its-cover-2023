@@ -1,10 +1,175 @@
 {
 	"events": [
+		{
+			"call_node": {
+				"arguments": [
 
+				],
+				"method_name": "damage_sanity",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Do you want to see your future?"
+		},
+		{
+			"choice": "Yes",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Good, I was going to show you anyways"
+		},
+		{
+			"choice": "No",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Too bad"
+		},
+		{
+			"choice": "Uhhh…",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Too late"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You’ve switched from American Spirits to Camels, from craft beer to Karkov vodka, and it’s still just you and Becky…day after day, night after night…in this store. "
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You’re old… graying… and still glued to that cash register."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Becky is still your boss…and she still won’t let you change the radio station…\nAll 90s rock, all day, forever baby…"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Jeff still comes in daily with the same request\nHey I got 20 on the diesel on pump 3 and a pack of cowboy killers if you don’t mind."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Every day you feel the weight of your wasted potential crushing you slowly as you see your classmates jetting off to college, their new jobs, or starting families to doom their satan spawn to another generation of suffering in this shithole town."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The voice in your head keeps you entertained…but less so these days…the Karkov keeps it quiet…quieter. Becky taught you that trick. "
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sometimes a customer will ask\nAre you alright? Seems you drifted off for a second…when the voice starts chatting away. \nYou always answer “living the dream” "
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You grow old, frail, and eventually wither away in this very store…"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Turns out a lifetime of gas station burgers isn’t too kind on the ol’ aorta. "
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Did you think you’d work here your entire life?"
+		},
+		{
+			"choice": "No this is just a summer gig, I’m moving to the city in September",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "That was bullshit, I’m out of here as soon as I scrape together some cash",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "I think I knew I’d be stuck in this town forever in my heart of hearts",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"change_timeline": "timeline-1690242485.json",
+			"event_id": "dialogic_020"
+		}
 	],
 	"metadata": {
 		"dialogic-version": "1.4.5",
 		"file": "timeline-1690245176.json~RF1b22d20c.TMP",
-		"name": "intrusive2"
+		"name": "intrusive0"
 	}
 }
