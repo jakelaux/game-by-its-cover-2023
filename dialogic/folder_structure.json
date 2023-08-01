@@ -53,13 +53,12 @@
 		},
 		"Timelines": {
 			"files": [
-				"timeline-1690245176.json",
-				"timeline-1690245176.json~RF1b22d20c.TMP"
+
 			],
 			"folders": {
-				"Gossip": {
+				"Becky": {
 					"files": [
-						"timeline-1690744992.json"
+						"timeline-1690848205.json"
 					],
 					"folders": {
 
@@ -69,9 +68,22 @@
 						"folded": false
 					}
 				},
+				"Gossip": {
+					"files": [
+						"timeline-1690744992.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": true
+					}
+				},
 				"Intrusive": {
 					"files": [
-						"timeline-1690847643.json"
+						"timeline-1690847643.json",
+						"timeline-1690245176.json~RF1b22d20c.TMP"
 					],
 					"folders": {
 
@@ -115,7 +127,7 @@
 					},
 					"metadata": {
 						"color": null,
-						"folded": false
+						"folded": true
 					}
 				}
 			},
