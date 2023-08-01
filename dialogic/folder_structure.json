@@ -6,7 +6,9 @@
 		"Characters": {
 			"files": [
 				"character-1690237009.json",
-				"character-1690242511.json"
+				"character-1690242511.json",
+				"character-1690745163.json",
+				"character-1690745174.json"
 			],
 			"folders": {
 
@@ -23,7 +25,6 @@
 				"1690242648-330",
 				"1690244779-516",
 				"1690245371-386",
-				"1690501993-133",
 				"1690501993-133"
 			],
 			"folders": {
@@ -47,19 +48,76 @@
 			},
 			"metadata": {
 				"color": null,
-				"folded": false
+				"folded": true
 			}
 		},
 		"Timelines": {
 			"files": [
-				"timeline-1688687242.json",
-				"timeline-1688696046.json",
-				"timeline-1690236989.json",
-				"timeline-1690242485.json",
-				"timeline-1690245176.json"
+				"timeline-1690245176.json",
+				"timeline-1690245176.json~RF1b22d20c.TMP"
 			],
 			"folders": {
+				"Gossip": {
+					"files": [
+						"timeline-1690744992.json"
+					],
+					"folders": {
 
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				},
+				"Intrusive": {
+					"files": [
+						"timeline-1690847643.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				},
+				"Psychic": {
+					"files": [
+						"timeline-1690236989.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				},
+				"Time Traveler": {
+					"files": [
+						"timeline-1690242485.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				},
+				"Tutorial": {
+					"files": [
+						"timeline-1688687242.json",
+						"timeline-1688696046.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				}
 			},
 			"metadata": {
 				"color": null,

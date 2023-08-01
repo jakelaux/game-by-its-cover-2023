@@ -28,16 +28,16 @@
 			"value": ""
 		},
 		{
-			"id": "1690244779-516",
-			"name": "can_have_key",
-			"type": 0,
-			"value": ""
-		},
-		{
 			"id": "1690501993-133",
 			"name": "key_broken",
 			"type": 0,
 			"value": "false"
+		},
+		{
+			"id": "1690244779-516",
+			"name": "can_have_key",
+			"type": 0,
+			"value": ""
 		}
 	]
 }

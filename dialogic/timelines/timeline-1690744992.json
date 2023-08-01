@@ -1,0 +1,353 @@
+{
+	"events": [
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "damage_sanity",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "You know what you have to do about Becky, right?"
+		},
+		{
+			"choice": "I don’t think about Becky… too much. Well…",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Keep lying to yourself. I dare you. HAHAHAHA."
+		},
+		{
+			"choice": "Slit her throat. Peel off her skin. Gouge out her eyes. I need to be her.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yes. Yes. That will make this nightmare end. "
+		},
+		{
+			"choice": "I’m Becky.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Not yet. But if you made a convincing suit out of her skin..."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1690745163.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
+		},
+		{
+			"character": "character-1690745163.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "A pack of Pall Mall menthols. Thanks."
+		},
+		{
+			"choice": "She must remember you from school, right? At least that one time…",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "No way Kelly knows you exist.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1690745163.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "You’re [player_name], right? Aren’t you the one Mr. Robinson caught killing squirrels and stringing them up under the bleachers? "
+		},
+		{
+			"choice": "Yeah. That was me. ",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "No… Uhh that was another [player_name] in school. I would never make a beautiful collage ofrodent intestines.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1690745163.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Whatever. You’re weird. But you work for Becky, right?"
+		},
+		{
+			"choice": "I am Becky.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1690745163.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "No you aren’t. I know her. You’re [player_name]"
+		},
+		{
+			"choice": "I guess she’s my manager. But she won’t be much longer.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1690745163.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ohh I didn’t know she was leaving. Interesting…"
+		},
+		{
+			"choice": "Becky works for me. I’m the president of this institution.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1690745163.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hmm, okay hot shot. You work at a gas station. It isn’t that deep. "
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Whatever. Do you want to hear some tea about Becky? "
+		},
+		{
+			"choice": "I am Becky.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1690745163.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Uhh, okay. I guess you’re as weird as Becky said you were. "
+		},
+		{
+			"choice": "Yes. Please spill. Is the tea scolding hot? The hotter the better. I want it to burn me.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1690745163.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "As you know, Becky and I have history...\n(At first Kelly can’t suppress a small grin. Then she frowns.)"
+		},
+		{
+			"character": "character-1690745163.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "But now she’s with Gloria. It’s whatever. It’s fine. But here’s the thing…"
+		},
+		{
+			"character": "character-1690745163.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The other day, I saw Stacy and Becky slip into the bathroom here. \nThey were in there a LONG time. Gross. \nWhat were they doing?"
+		},
+		{
+			"character": "character-1690745163.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Anyway, don’t tell anyone. Just thought you might want to give the bathroom a deep  clean."
+		},
+		{
+			"choice": "No. I know everything I need to know. ",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1690745163.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Uhh, okay. I guess you’re as weird as Becky said you were. "
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1690745163.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ok...well I have my smokes...so bye"
+		},
+		{
+			"animation": "4-fade_out.gd",
+			"animation_length": 1,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1690745163.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "damage_sanity",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "See Becky hates you. What will you do about it?"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I smell smoke on the wind."
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"change_timeline": "timeline-1690242485.json",
+			"event_id": "dialogic_020"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1690744992.json",
+		"name": "Gossip1"
+	}
+}

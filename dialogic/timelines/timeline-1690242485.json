@@ -227,7 +227,7 @@
 			"z_index": 0
 		},
 		{
-			"change_timeline": "timeline-1690245176.json",
+			"change_timeline": "timeline-1690847643.json",
 			"event_id": "dialogic_020"
 		},
 		{
@@ -489,7 +489,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "You walk in on the time traveler taking a shit. Everything appears normal. The time traveler says nothing. He just stares at you blankly."
+			"text": "You walk in on the man taking a shit. Everything appears normal. The time traveler says nothing. He just stares at you blankly."
 		},
 		{
 			"definition": "1690501993-133",
@@ -623,7 +623,7 @@
 			"wait_seconds": 4
 		},
 		{
-			"change_timeline": "timeline-1690245176.json",
+			"change_timeline": "timeline-1690847643.json",
 			"event_id": "dialogic_020"
 		}
 	],

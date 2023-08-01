@@ -7,6 +7,12 @@
 			"text": "Oh yeah, that's right. I'm [player_name]..."
 		},
 		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Well...I'm up and not crying so...I guess I can make it through this shift"
+		},
+		{
 			"event_id": "dialogic_023",
 			"hide_dialogbox": true,
 			"wait_seconds": 1.5
@@ -51,6 +57,10 @@
 			"event_id": "dialogic_023",
 			"hide_dialogbox": true,
 			"wait_seconds": 0.5
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
 		},
 		{
 			"character": "",
