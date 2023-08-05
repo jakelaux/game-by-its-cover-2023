@@ -122,7 +122,7 @@
 			"operation": "=",
 			"random_upper_limit": 100,
 			"set_random": false,
-			"set_value": "justice"
+			"set_value": "Justice"
 		},
 		{
 			"choice": "Hanged Man",
@@ -149,7 +149,7 @@
 			"operation": "=",
 			"random_upper_limit": 100,
 			"set_random": false,
-			"set_value": "hanged_man"
+			"set_value": "the Hanged Man"
 		},
 		{
 			"choice": "The Hermit",
@@ -176,10 +176,16 @@
 			"operation": "=",
 			"random_upper_limit": 100,
 			"set_random": false,
-			"set_value": "hermit"
+			"set_value": "the Hermit"
 		},
 		{
 			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You pick up the tarot card and tuck it into your pocket."
 		},
 		{
 			"event_id": "dialogic_024",

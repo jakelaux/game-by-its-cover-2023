@@ -1,0 +1,145 @@
+{
+	"events": [
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "damage_sanity",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Can you believe she was trying to talk shit about you…to you?"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "What do you mean?"
+		},
+		{
+			"choice": "You are Becky",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "You are Becky",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "You are Becky",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I am Becky"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wait…am I? I thought I was [player_name]..."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "No, you are becky"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "We are becky"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wait, who are you?"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I am you, you are Becky"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "We are controlling [player_name] and the glow of this monitor is hurting your eyes."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wha–"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"change_timeline": "timeline-1691259468.json",
+			"event_id": "dialogic_020"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1691256973.json",
+		"name": "Intrusive2"
+	}
+}

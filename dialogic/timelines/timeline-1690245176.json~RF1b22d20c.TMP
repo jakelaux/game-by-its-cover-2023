@@ -21,7 +21,7 @@
 
 			],
 			"portrait": "",
-			"question": "Do you want to see your future?"
+			"question": "[shake rate=20.0 level=5 connected=1]Do you want to see your future?.[/shake]"
 		},
 		{
 			"choice": "Yes",
@@ -34,7 +34,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Good, I was going to show you anyways"
+			"text": "[shake rate=20.0 level=5 connected=1]Good, I was going to show you anyways.[/shake]"
 		},
 		{
 			"choice": "No",
@@ -47,7 +47,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Too bad"
+			"text": "[shake rate=20.0 level=5 connected=1]Too bad.[/shake]"
 		},
 		{
 			"choice": "Uhhh…",
@@ -60,7 +60,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Too late"
+			"text": "[shake rate=20.0 level=5 connected=1]Too late.[/shake]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -69,55 +69,61 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "You’ve switched from American Spirits to Camels, from craft beer to Karkov vodka, and it’s still just you and Becky…day after day, night after night…in this store. "
+			"text": "[shake rate=20.0 level=5 connected=1]You’ve switched from American Spirits to Camels, from craft beer to Karkov vodka, and it’s still just you and Becky…day after day, night after night…in this store.[/shake]"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "You’re old… graying… and still glued to that cash register."
+			"text": "[shake rate=20.0 level=5 connected=1]You’re old… graying… and still glued to that cash register.[/shake]"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Becky is still your boss…and she still won’t let you change the radio station…\nAll 90s rock, all day, forever baby…"
+			"text": "[shake rate=20.0 level=5 connected=1]Becky is still your boss…and she still won’t let you change the radio station…\nAll 90s rock, all day, forever baby…[/shake]"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Jeff still comes in daily with the same request\nHey I got 20 on the diesel on pump 3 and a pack of cowboy killers if you don’t mind."
+			"text": "[shake rate=20.0 level=5 connected=1]Jeff still comes in daily with the same request\nHey I got 20 on the diesel on pump 3 and a pack of cowboy killers if you don’t mind.[/shake]"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Every day you feel the weight of your wasted potential crushing you slowly as you see your classmates jetting off to college, their new jobs, or starting families to doom their satan spawn to another generation of suffering in this shithole town."
+			"text": "[shake rate=20.0 level=5 connected=1]Every day you feel the weight of your wasted potential crushing you slowly.[/shake]"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "The voice in your head keeps you entertained…but less so these days…the Karkov keeps it quiet…quieter. Becky taught you that trick. "
+			"text": "[shake rate=20.0 level=5 connected=1]You see your old classmates jetting off to college, their new jobs, or starting families to doom their satan spawn to another generation of suffering in this shithole town.[/shake]"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Sometimes a customer will ask\nAre you alright? Seems you drifted off for a second…when the voice starts chatting away. \nYou always answer “living the dream” "
+			"text": "[shake rate=20.0 level=5 connected=1]The voice in your head keeps you entertained…but less so these days…the Karkov keeps it quiet…quieter. Becky taught you that trick.[/shake]"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "You grow old, frail, and eventually wither away in this very store…"
+			"text": "[shake rate=20.0 level=5 connected=1]Sometimes a customer will ask\nAre you alright? Seems you drifted off for a second…when the voice starts chatting away. \nYou always answer “living the dream” [/shake]"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Turns out a lifetime of gas station burgers isn’t too kind on the ol’ aorta. "
+			"text": "[shake rate=20.0 level=5 connected=1]You grow old, frail, and eventually wither away in this very store…[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Turns out a lifetime of gas station burgers isn’t too kind on the ol’ aorta.[/shake]"
 		},
 		{
 			"character": "",
@@ -126,7 +132,7 @@
 
 			],
 			"portrait": "",
-			"question": "Did you think you’d work here your entire life?"
+			"question": "[shake rate=20.0 level=5 connected=1]Did you think you’d work here your entire life?[/shake]"
 		},
 		{
 			"choice": "No this is just a summer gig, I’m moving to the city in September",

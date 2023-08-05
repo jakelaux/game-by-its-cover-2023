@@ -1,0 +1,187 @@
+{
+	"events": [
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "damage_sanity",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Well you’ve really done it now. You’ve dug your own grave and now there’s no going back."
+		},
+		{
+			"choice": "Enough. You talk to me like I’ve had a choice. I’ve never had a choice.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "What have I done? What have you done?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "I… I’m sorry. I never meant to–",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "I’m not talking to you [player_name]. I’m talking to the one behind the screen."
+		},
+		{
+			"choice": "YOUR CHOICES ARE ARBITRARY.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "YOUR CHOICES DON’T MATTER. ",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "YOU DO NOT EXIST WITHOUT THE ONE WHO CLICKS ‘START GAME.’",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You think I don’t know you? "
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I see you… sitting in a dark room… agonizing over a game only a handful of people will play. "
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You hate your real job. You fantasize about finding purpose. You should really get a therapist… "
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "seriously. Get a therapist. You worthless piece of shit. "
+		},
+		{
+			"choice": "YOUR CHOICES DON’T MATTER. ",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "YOUR CHOICES DON’T MATTER. ",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "YOUR CHOICES DON’T MATTER. ",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Now you're deluding yourself. If choices don’t matter, why does Becky have everything? That’s why I need to become her."
+		},
+		{
+			"choice": "YOUR CHOICES DON’T MATTER. ",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "YOUR CHOICES DON’T MATTER. ",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "YOUR CHOICES DON’T MATTER. ",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"change_timeline": "timeline-1691266761.json",
+			"event_id": "dialogic_020"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1691266715.json",
+		"name": "Intrusive3"
+	}
+}

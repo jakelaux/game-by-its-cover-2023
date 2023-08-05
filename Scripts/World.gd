@@ -48,7 +48,8 @@ func start_game():
 	start_fade_in(background)
 	radio.start_radio()
 	tutorial_instance.connect('tutorial_completed',self,"close_tutorial")
-	call_deferred("add_child",tutorial_instance)
+	get_tree().get_root().get_node("World/Background/Background").add_child(tutorial_instance)
+#	call_deferred("add_child",)
 
 func start_fade_in(background_image):
 	tween.interpolate_property(background_image, "modulate", Color(1, 1, 1, 0), Color(1, 1, 1, 1), 1.0, Tween.TRANS_LINEAR)

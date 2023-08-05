@@ -15,7 +15,7 @@
 			},
 			"metadata": {
 				"color": null,
-				"folded": true
+				"folded": false
 			}
 		},
 		"Definitions": {
@@ -25,7 +25,8 @@
 				"1690242648-330",
 				"1690244779-516",
 				"1690245371-386",
-				"1690501993-133"
+				"1690501993-133",
+				"1691259315-648"
 			],
 			"folders": {
 
@@ -53,12 +54,12 @@
 		},
 		"Timelines": {
 			"files": [
-
+				"timeline-1691266761.json"
 			],
 			"folders": {
 				"Becky": {
 					"files": [
-						"timeline-1690848205.json"
+						"timeline-1691266761.json"
 					],
 					"folders": {
 
@@ -83,7 +84,10 @@
 				"Intrusive": {
 					"files": [
 						"timeline-1690847643.json",
-						"timeline-1690245176.json~RF1b22d20c.TMP"
+						"timeline-1690245176.json~RF1b22d20c.TMP",
+						"timeline-1691256973.json",
+						"timeline-1691259468.json",
+						"timeline-1691266715.json"
 					],
 					"folders": {
 
@@ -102,7 +106,7 @@
 					},
 					"metadata": {
 						"color": null,
-						"folded": false
+						"folded": true
 					}
 				},
 				"Time Traveler": {
@@ -127,7 +131,7 @@
 					},
 					"metadata": {
 						"color": null,
-						"folded": false
+						"folded": true
 					}
 				}
 			},

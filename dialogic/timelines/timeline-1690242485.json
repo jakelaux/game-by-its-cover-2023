@@ -197,6 +197,25 @@
 			"set_value": "no"
 		},
 		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Seriously?"
+		},
+		{
+			"choice": "No you can't use the bathroom, you always take forever and I know you're up to something in there",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
 			"event_id": "dialogic_013"
 		},
 		{
@@ -585,6 +604,12 @@
 		},
 		{
 			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hey, I don't think I can let you use the bathroom from now on...you always take forever and make weird noises...I know you're up to something in there."
 		},
 		{
 			"event_id": "dialogic_013"

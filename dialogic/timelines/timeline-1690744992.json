@@ -143,11 +143,17 @@
 			"value": ""
 		},
 		{
-			"choice": "No… Uhh that was another [player_name] in school. I would never make a beautiful collage ofrodent intestines.",
+			"choice": "No… Uhh that was another [player_name] in school...",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I would never make a beautiful collage ofrodent intestines."
 		},
 		{
 			"event_id": "dialogic_013"
@@ -231,6 +237,14 @@
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
+		},
+		{
+			"definition": "1691259315-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "yes"
 		},
 		{
 			"character": "character-1690745163.json",
@@ -341,7 +355,7 @@
 			"event_id": "dialogic_042"
 		},
 		{
-			"change_timeline": "timeline-1690245176.json~RF1b22d20c.TMP",
+			"change_timeline": "timeline-1691256973.json",
 			"event_id": "dialogic_020"
 		}
 	],

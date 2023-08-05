@@ -4,20 +4,14 @@
 	],
 	"variables": [
 		{
-			"id": "1690238927-374",
-			"name": "tarot_card",
-			"type": 0,
-			"value": ""
-		},
-		{
 			"id": "1690242648-330",
 			"name": "pres_year",
 			"type": 0,
 			"value": ""
 		},
 		{
-			"id": "1688696161-648",
-			"name": "player_name",
+			"id": "1690244779-516",
+			"name": "can_have_key",
 			"type": 0,
 			"value": ""
 		},
@@ -28,16 +22,28 @@
 			"value": ""
 		},
 		{
+			"id": "1688696161-648",
+			"name": "player_name",
+			"type": 0,
+			"value": ""
+		},
+		{
 			"id": "1690501993-133",
 			"name": "key_broken",
 			"type": 0,
 			"value": "false"
 		},
 		{
-			"id": "1690244779-516",
-			"name": "can_have_key",
+			"id": "1690238927-374",
+			"name": "tarot_card",
 			"type": 0,
 			"value": ""
+		},
+		{
+			"id": "1691259315-648",
+			"name": "is_tea_spilled",
+			"type": 0,
+			"value": "no"
 		}
 	]
 }
