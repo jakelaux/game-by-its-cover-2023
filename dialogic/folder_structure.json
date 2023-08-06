@@ -15,7 +15,7 @@
 			},
 			"metadata": {
 				"color": null,
-				"folded": false
+				"folded": true
 			}
 		},
 		"Definitions": {
@@ -78,7 +78,7 @@
 					},
 					"metadata": {
 						"color": null,
-						"folded": true
+						"folded": false
 					}
 				},
 				"Intrusive": {

@@ -16,12 +16,18 @@
 		},
 		{
 			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Are you tired? I see your eyelids fighting gravity.[/shake]"
+		},
+		{
+			"character": "",
 			"event_id": "dialogic_010",
 			"options": [
 
 			],
 			"portrait": "",
-			"question": "You know what you have to do about Becky, right?"
+			"question": "[shake rate=20.0 level=5 connected=1]How does it make you feel knowing Becky sets the schedule?[/shake]"
 		},
 		{
 			"choice": "I don’t think about Becky… too much. Well…",
@@ -34,10 +40,10 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Keep lying to yourself. I dare you. HAHAHAHA."
+			"text": "[shake rate=20.0 level=5 connected=1]Keep lying to yourself. I dare you.[/shake]"
 		},
 		{
-			"choice": "Slit her throat. Peel off her skin. Gouge out her eyes. I need to be her.",
+			"choice": "She controls everything. Nothing I do matters.",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -47,7 +53,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Yes. Yes. That will make this nightmare end. "
+			"text": "[shake rate=20.0 level=5 connected=1] You should be in charge.You should make the schedule. But Becky’s in the way.[/shake]"
 		},
 		{
 			"choice": "I’m Becky.",
@@ -60,7 +66,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Not yet. But if you made a convincing suit out of her skin..."
+			"text": "[shake rate=20.0 level=5 connected=1]Yes. I am Becky.[/shake]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -74,6 +80,14 @@
 				"target_node_path": "/root/World"
 			},
 			"event_id": "dialogic_042"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Audio/sfx/enter_store_w_steps.wav",
+			"volume": 0
 		},
 		{
 			"animation": "1-fade_in.gd",
@@ -98,7 +112,7 @@
 		},
 		{
 			"event_id": "dialogic_024",
-			"set_theme": "theme-1690342652.cfg"
+			"set_theme": "theme-1689644577.cfg"
 		},
 		{
 			"character": "character-1690745163.json",
@@ -127,36 +141,138 @@
 			"event_id": "dialogic_013"
 		},
 		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You’re [player_name], right? You’re that fire kid…"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You burned down the bleachers at the old abandoned middle school…."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "At first everyone thought it was arson but they caught you on that security camera playing with bottle rockets all by yourself…"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Kind of sad, really..."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Why were you alone? "
+		},
+		{
 			"character": "character-1690745163.json",
 			"event_id": "dialogic_010",
 			"options": [
 
 			],
 			"portrait": "",
-			"question": "You’re [player_name], right? Aren’t you the one Mr. Robinson caught killing squirrels and stringing them up under the bleachers? "
+			"question": "Do you have any friends?"
 		},
 		{
-			"choice": "Yeah. That was me. ",
+			"choice": "I guess I just have one friend",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
 		},
 		{
-			"choice": "No… Uhh that was another [player_name] in school...",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "damage_sanity",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I would never make a beautiful collage ofrodent intestines."
+			"text": "[shake rate=20.0 level=5 connected=1]Oh you’re talking about me, aren’t you? You think I’m your friend… That’s so sad.[/shake]"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"choice": "I…uhh… I work too much to have friends. Yeah, that’s it.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "damage_sanity",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Yes. You work so hard.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1] If only Beck stopped putting you on the night shift.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Then you’d have friends.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Because there couldn’t possibly be anything wrong with you...[/shake]"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
 		},
 		{
 			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
 		},
 		{
 			"character": "character-1690745163.json",
@@ -181,7 +297,7 @@
 			"text": "No you aren’t. I know her. You’re [player_name]"
 		},
 		{
-			"choice": "I guess she’s my manager. But she won’t be much longer.",
+			"choice": "Yeah. Becky sets the schedule. Becky’s why I’m stuck working nights. ",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -191,7 +307,7 @@
 			"character": "character-1690745163.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Ohh I didn’t know she was leaving. Interesting…"
+			"text": "Hmm… Seems like a good leader...you'd think she might share nights when scheduling if she cared at all about anyone else."
 		},
 		{
 			"choice": "Becky works for me. I’m the president of this institution.",
@@ -210,13 +326,19 @@
 			"event_id": "dialogic_013"
 		},
 		{
+			"character": "character-1690745163.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Anyway… So, I’m going to be real with you… I do not like Becky. "
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_010",
 			"options": [
 
 			],
 			"portrait": "",
-			"question": "Whatever. Do you want to hear some tea about Becky? "
+			"question": "What do you think of her? I mean, you work with her, you must have an opinion."
 		},
 		{
 			"choice": "I am Becky.",
@@ -226,13 +348,13 @@
 			"value": ""
 		},
 		{
-			"character": "character-1690745163.json",
+			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Uhh, okay. I guess you’re as weird as Becky said you were. "
+			"text": "Uhh, okay. I guess you’re as weird as Becky said you were..."
 		},
 		{
-			"choice": "Yes. Please spill. Is the tea scolding hot? The hotter the better. I want it to burn me.",
+			"choice": "I hate Becky.",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -250,28 +372,97 @@
 			"character": "character-1690745163.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "As you know, Becky and I have history...\n(At first Kelly can’t suppress a small grin. Then she frowns.)"
+			"text": "You know there’s just something off about her. I can’t place it…"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 0.3
 		},
 		{
 			"character": "character-1690745163.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "But now she’s with Gloria. It’s whatever. It’s fine. But here’s the thing…"
+			"text": "Well, maybe I can place it actually…"
 		},
 		{
 			"character": "character-1690745163.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "The other day, I saw Stacy and Becky slip into the bathroom here. \nThey were in there a LONG time. Gross. \nWhat were they doing?"
+			"text": "It’s like she thinks she’s better than everyone but I’ve seen the real Becky…"
 		},
 		{
 			"character": "character-1690745163.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Anyway, don’t tell anyone. Just thought you might want to give the bathroom a deep  clean."
+			"text": "She pretends she’s cool and nothing can phase her…"
 		},
 		{
-			"choice": "No. I know everything I need to know. ",
+			"character": "character-1690745163.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It’s all so fake. I saw her crying behind those old middle school bleachers…"
+		},
+		{
+			"character": "character-1690745163.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Actually, that’s right, she was behind those old bleachers you burned down, now I think of it…"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 0.3
+		},
+		{
+			"character": "character-1690745163.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "So she’s clearly a mess but she acts all cool. She acts like nothing and no one matters…"
+		},
+		{
+			"character": "character-1690745163.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "And the thing is, I think it’s all an act to make people think she’s cool when she’s just another sad kid like you, hanging out alone by the bleachers… "
+		},
+		{
+			"character": "character-1690745163.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "But, unlike you, people lap it up when it’s Becky… "
+		},
+		{
+			"character": "character-1690745163.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=40.0 level=5 connected=1]Like, my dumb boyfriend thinks he’s in love with her…[/shake]"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 0.5
+		},
+		{
+			"character": "character-1690745163.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "He’s the drummer in her stupid band and he says he likes that she’s mean to him…"
+		},
+		{
+			"character": "character-1690745163.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It’s dumb. I hate her. I hate him. I hate everyone. I’m fine… "
+		},
+		{
+			"character": "character-1690745163.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Anyway, thanks for the smokes, loner..."
+		},
+		{
+			"choice": "Becky is my only friend.",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -281,16 +472,18 @@
 			"character": "character-1690745163.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Uhh, okay. I guess you’re as weird as Becky said you were. "
+			"text": "Uhh, okay. I guess you’re as weird as Becky said you were..."
 		},
 		{
 			"event_id": "dialogic_013"
 		},
 		{
-			"character": "character-1690745163.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Ok...well I have my smokes...so bye"
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Audio/sfx/leave_store_w_steps.wav",
+			"volume": 0
 		},
 		{
 			"animation": "4-fade_out.gd",
@@ -336,13 +529,19 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "See Becky hates you. What will you do about it?"
+			"text": "See Becky doesn’t care about you."
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I smell smoke on the wind."
+			"text": "Becky doesn’t care about anyone."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Becky only cares about Becky. "
 		},
 		{
 			"call_node": {

@@ -165,6 +165,42 @@
 			"event_id": "dialogic_013"
 		},
 		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Since your choices don’t matter, have you ever thought about burning it all down?"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Consider it..."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Consider burning it all down with Becky inside."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Then there will only be one of us. "
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "There will only be one Becky…"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You know what you need to do. She’s coming."
+		},
+		{
 			"call_node": {
 				"arguments": [
 
