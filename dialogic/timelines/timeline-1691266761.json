@@ -1,6 +1,1288 @@
 {
 	"events": [
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You find yourself behind the counter holding a gas can dripping sweat with a zippo in your hand."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Audio/sfx/enter_store_w_steps.wav",
+			"volume": 0
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_010",
+			"options": [
 
+			],
+			"portrait": "",
+			"question": "What do you think you’re doing [player_name]? I’ve been gone for like 5 minutes?"
+		},
+		{
+			"choice": "Do you hear them too Becky? The voice in your head?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1691452266-146",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "voice"
+		},
+		{
+			"choice": "What do you mean? I’m working the cash register…",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Look at yourself! You don’t need a gas can and a lighter to work the register…"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "damage_sanity",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Clearly Becky doesn’t know anything about working a register.[/shake]"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Seriously, what are you up to?"
+		},
+		{
+			"choice": "Do you hear them too Becky? The voice in your head?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1691452266-146",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "voice"
+		},
+		{
+			"choice": "This *pour gasoline on the cash register*",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1691452266-146",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "burn"
+		},
+		{
+			"choice": "Can I go home? (home)",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1691452266-146",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "home"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "I’m trying to end this",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Woah, woah, woah. Listen. Whatever’s going on, let’s just talk about it…"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You can set the gas can and lighter down."
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": " This is just a conversation. "
+		},
+		{
+			"choice": "I’m done talking…",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "*pour gasoline on the cash register*... I have to talk all day to these lousy customers. And for what?"
+		},
+		{
+			"definition": "1691452266-146",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "burn"
+		},
+		{
+			"choice": "Have you ever thought about burning this place down?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Just every day I’ve worked here…you think your dad would be pissed?"
+		},
+		{
+			"definition": "1691452266-146",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "partner"
+		},
+		{
+			"choice": "Can I go home?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1691452266-146",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "home"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1691452266-146",
+			"event_id": "dialogic_012",
+			"value": "voice"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I… Well, not in my head. But since I started this job, the rest of the world has gotten louder. "
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Bad things keep happening and it feels like I can’t do anything to stop it."
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I just want to sleep all the time. I’m so tired. "
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Are you sure there’s a voice in your head or do you just need sleep?"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "damage_sanity",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Pft… Sure. Try to sleep me off. See what happens. I dare you. "
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Becky..."
+		},
+		{
+			"choice": "You’re tired too? I thought it was just me.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1691452266-146",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "partner"
+		},
+		{
+			"choice": "Have you ever thought of burning this place down?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Just every day I’ve worked here…but..."
+		},
+		{
+			"definition": "1691452266-146",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "partner"
+		},
+		{
+			"choice": "I need to stop this once and for all. There’s only one way.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1691452266-146",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "burn"
+		},
+		{
+			"choice": "I… maybe I do just need to rest. Can I go home?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1691452266-146",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "home"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1691452266-146",
+			"event_id": "dialogic_012",
+			"value": "partner"
+		},
+		{
+			"condition": "",
+			"definition": "1691360721-366",
+			"event_id": "dialogic_012",
+			"value": "yes"
+		},
+		{
+			"definition": "1691452266-146",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "burn"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1691452266-146",
+			"event_id": "dialogic_012",
+			"value": "partner"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Okay–so you…"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Okay. Damn."
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yeah I mean, I get it. I think I get it."
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "If you burn this place down, that’s it. You’ll have to leave this town forever."
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "He’d kill you."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "But you know that, right?"
+		},
+		{
+			"choice": "Yeah. He would kill me. But at least the voice would stop. The voice has to stop.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "damage_sanity",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]What!? No. Kill Becky. I’ll never stop until you do it. Burn it. Burn everything.[/shake]"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"choice": "I haven’t thought that far ahead.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Are you sure?"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Becky stands in front of you for a long while, thinking."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Okay let’s do it. (She holds out her hand)"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You hand Becky the lighter"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Becky flips the Gas & Gorge sign from ‘Open’ to ‘Closed.’ "
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "She gestures to the store isles and as you start to pour the sickly sweet stench of gasoline makes your eyes water."
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Once the can is empty, the two of you lock eyes."
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Becky flicks the zippo. You nod. She drops the lighter."
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Flames lick their way up the chip stand, they wrap around popping soda bottles. Smoke fills the store."
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You’re mesmerized by it. "
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "damage_sanity",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "[shake rate=20.0 level=5 connected=1]Yes… Beautiful, isn’t it. Why don’t you stay a while.[/shake]"
+		},
+		{
+			"choice": "So warm. I could just rest my eyes for a minute. ",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "I do love fire.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Where would I go after this anyway? I might as well stay. ",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Snap out of it, [player_name]."
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Becky grabs your hand, and pulls you through the store door just before the flames reach the counter."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Audio/sfx/leave_store_w_steps.wav",
+			"volume": 0
+		},
+		{
+			"animation": "4-fade_out.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You hear sirens in the distance. "
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Becky rattles her keys and gestures to an old Ford pickup. "
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Want to skip town?"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1691452266-146",
+			"event_id": "dialogic_012",
+			"value": "burn"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "damage_sanity",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]This is your chance [player_name]\n[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Your chance to become Becky…or should I say your chance to be rid of the other Becky[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]From now on you will make the rules, your choices will matter, you are the president of this institution.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Go ahead…leave your black scorched mark on this town.[/shake]"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "[player_name]...are you ok?"
+		},
+		{
+			"choice": "Who’s [player_name], I’m Becky?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "For the last time [player_name]...I’m Becky, you’re [player_name]"
+		},
+		{
+			"choice": "Not anymore",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Goodbye Becky",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "I am Becky",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Better than ever…[player_name]",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[player_name]?"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "I’m Becky…what the hell is wrong with you?"
+		},
+		{
+			"choice": "Not anymore",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Goodbye Becky",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "I am Becky",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "*Stare*",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[player_name] whatever you’re thinking about doing…please don’t…"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I know I’ve scheduled you nights, I know we don’t always get along…but we can figure this out."
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Please…"
+		},
+		{
+			"choice": "What do you suggest?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Aghh–"
+		},
+		{
+			"choice": "I’m sorry Becky",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "You’re right…",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Aghh–"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "damage_sanity",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Do it…do it...do it..do it[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]You walk up to Becky and rip the name tag from her shirt…[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]You flick the lighter, drop it on the counter, and stroll out the front door. [/shake]"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Holy shit…what the hell[/shake]"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Oh no, oh no…[/shake]"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]You hear the old Becky rush to the back room [/shake]"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Audio/sfx/leave_store_w_steps.wav",
+			"volume": 0
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]As you walk to the front of the store…you hear the sink running and the sound of frantic movement[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]You casually open the door and walk out into the brisk night air[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "You look back at the door"
+		},
+		{
+			"choice": "BAR THE DOOR",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "BAR THE DOOR",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "BAR THE DOOR",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You can see the flames growing brighter by the second. "
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You pin the name tag to your shirt"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You smile and say  “I am Becky”..."
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1691452266-146",
+			"event_id": "dialogic_012",
+			"value": "home"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "damage_sanity",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Do you always give up this easy?? You could have been rid of this place…and Becky… forever…[/shake]"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[player_name] I don’t like the look on your face…"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yeah, I don’t think you should finish your shift"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Put the gas down and please get some rest…"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Do you have anywhere to crash?"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": " I’m not sure your asshole dad will be thrilled if you came home from your shift at his store early…"
+		},
+		{
+			"choice": "It will be fine",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ok, seriously, take care of yourself"
+		},
+		{
+			"choice": "No…",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You could maybe crash on my bassist’s couch…"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "damage_sanity",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Audio/sfx/leave_store_w_steps.wav",
+			"volume": 0
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Don’t worry, I’ll take great care of you[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]We’ll be right back here tomorrow[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]And the next day[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]And the next day[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]And you’ll be right back at this register…holding that gas can again before you know it[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]And maybe Becky will be here to stop you, maybe they won’t be, or maybe the’ll help stoke the flame[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]You seriously played all the way through this and chose to go home?[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1] I mean, you had other choices… more interesting choices.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]I guess you’re as boring as I thought. See you tomorrow. [/shake]"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_013"
+		}
 	],
 	"metadata": {
 		"dialogic-version": "1.4.5",

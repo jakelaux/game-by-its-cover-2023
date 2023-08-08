@@ -10,24 +10,6 @@
 			"value": ""
 		},
 		{
-			"id": "1690244779-516",
-			"name": "can_have_key",
-			"type": 0,
-			"value": ""
-		},
-		{
-			"id": "1690245371-386",
-			"name": "investigate_bathroom",
-			"type": 0,
-			"value": ""
-		},
-		{
-			"id": "1688696161-648",
-			"name": "player_name",
-			"type": 0,
-			"value": ""
-		},
-		{
 			"id": "1690501993-133",
 			"name": "key_broken",
 			"type": 0,
@@ -44,6 +26,42 @@
 			"name": "is_tea_spilled",
 			"type": 0,
 			"value": "no"
+		},
+		{
+			"id": "1691334545-787",
+			"name": "made_videogame",
+			"type": 0,
+			"value": "no"
+		},
+		{
+			"id": "1690245371-386",
+			"name": "investigate_bathroom",
+			"type": 0,
+			"value": ""
+		},
+		{
+			"id": "1690244779-516",
+			"name": "can_have_key",
+			"type": 0,
+			"value": ""
+		},
+		{
+			"id": "1688696161-648",
+			"name": "player_name",
+			"type": 0,
+			"value": ""
+		},
+		{
+			"id": "1691360721-366",
+			"name": "becky_var",
+			"type": 0,
+			"value": "neutral"
+		},
+		{
+			"id": "1691452266-146",
+			"name": "ending",
+			"type": 0,
+			"value": ""
 		}
 	]
 }

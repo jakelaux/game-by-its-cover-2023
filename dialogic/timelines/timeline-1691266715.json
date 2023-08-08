@@ -21,7 +21,7 @@
 
 			],
 			"portrait": "",
-			"question": "Well you’ve really done it now. You’ve dug your own grave and now there’s no going back."
+			"question": "[shake rate=20.0 level=5 connected=1]Well you’ve really done it now. You’ve dug your own grave and now there’s no going back.[/shake]"
 		},
 		{
 			"choice": "Enough. You talk to me like I’ve had a choice. I’ve never had a choice.",
@@ -49,12 +49,111 @@
 		},
 		{
 			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]I’m not talking to you [player_name]. I’m talking to the one behind the screen.[/shake]"
+		},
+		{
+			"character": "",
 			"event_id": "dialogic_010",
 			"options": [
 
 			],
 			"portrait": "",
-			"question": "I’m not talking to you [player_name]. I’m talking to the one behind the screen."
+			"question": "[shake rate=20.0 level=5 connected=1]Yes, you. Have you ever made a video game?[/shake]"
+		},
+		{
+			"choice": "Yes",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1691334545-787",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "yes"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]You think I don’t know you?[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]I see you… sitting in a dark room… agonizing over a game only a handful of people will play.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]You hate your real job. [/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]You fantasize about finding purpose.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": " [shake rate=20.0 level=5 connected=1]You should really get a therapist… seriously. Get a therapist.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "[shake rate=20.0 level=5 connected=1]You worthless piece of shit.[/shake]"
+		},
+		{
+			"choice": "YOUR CHOICES DON’T MATTER.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "YOUR CHOICES DON’T MATTER.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "YOUR CHOICES DON’T MATTER.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Now you're deluding yourself. If choices don’t matter, why does Becky have everything?"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "That’s why I need to become her."
 		},
 		{
 			"choice": "YOUR CHOICES ARE ARBITRARY.",
@@ -64,14 +163,14 @@
 			"value": ""
 		},
 		{
-			"choice": "YOUR CHOICES DON’T MATTER. ",
+			"choice": "YOUR CHOICES DON’T MATTER.",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
 		},
 		{
-			"choice": "YOU DO NOT EXIST WITHOUT THE ONE WHO CLICKS ‘START GAME.’",
+			"choice": "YOU DO NOT EXIST WITHOUT THE ONE WHO CLICKS ‘START GAME'.",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -81,22 +180,31 @@
 			"event_id": "dialogic_013"
 		},
 		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "You think I don’t know you? "
+			"choice": "No",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1691334545-787",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "no"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I see you… sitting in a dark room… agonizing over a game only a handful of people will play. "
+			"text": "[shake rate=20.0 level=5 connected=1]Oh so you aren’t a sad sap making mediocre games on a platform almost no one knows exists?[/shake]"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "You hate your real job. You fantasize about finding purpose. You should really get a therapist… "
+			"text": "[shake rate=20.0 level=5 connected=1]Well I guess that makes you… Well, that makes you a really good friend…[/shake]"
 		},
 		{
 			"character": "",
@@ -105,57 +213,24 @@
 
 			],
 			"portrait": "",
-			"question": "seriously. Get a therapist. You worthless piece of shit. "
+			"question": "[shake rate=20.0 level=5 connected=1]Does that make you feel good, supporting your friend’s silly little game? [/shake]"
 		},
 		{
-			"choice": "YOUR CHOICES DON’T MATTER. ",
+			"choice": "IT DOESN’T MATTER WHAT YOU SAY.",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
 		},
 		{
-			"choice": "YOUR CHOICES DON’T MATTER. ",
+			"choice": "IT DOESN’T MATTER WHAT YOU DO. ",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
 		},
 		{
-			"choice": "YOUR CHOICES DON’T MATTER. ",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"event_id": "dialogic_013"
-		},
-		{
-			"character": "",
-			"event_id": "dialogic_010",
-			"options": [
-
-			],
-			"portrait": "",
-			"question": "Now you're deluding yourself. If choices don’t matter, why does Becky have everything? That’s why I need to become her."
-		},
-		{
-			"choice": "YOUR CHOICES DON’T MATTER. ",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"choice": "YOUR CHOICES DON’T MATTER. ",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"choice": "YOUR CHOICES DON’T MATTER. ",
+			"choice": "IT DOESN’T MATTER HOW YOU FEEL. ",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -168,37 +243,82 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Since your choices don’t matter, have you ever thought about burning it all down?"
+			"text": "[shake rate=20.0 level=5 connected=1]It really is rather enabling, isn’t it? I mean look at that poor trio of sad, sleep deprived weirdos.[/shake]"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Consider it..."
+			"text": "[shake rate=20.0 level=5 connected=1]Is it a fun little summer activity between pals? Or are they just desperate to escape the meaninglessness of their own lives, choices, dreams, and desires…[/shake]"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Consider burning it all down with Becky inside."
+			"text": "[shake rate=20.0 level=5 connected=1]So desperate, in fact, that they’d channel all that energy into a game and make YOU play it. Ha! It’s really quite cruel. [/shake]"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Then there will only be one of us. "
+			"text": "[shake rate=20.0 level=5 connected=1]So why make a game at all?[/shake]"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "There will only be one Becky…"
+			"text": "[shake rate=20.0 level=5 connected=1]Maybe they thought they could become something, hone their skills, make something that would matter one day. But we all know Michaelsoft won’t let that happen. [/shake]"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "You know what you need to do. She’s coming."
+			"text": "[shake rate=20.0 level=5 connected=1]Or maybe they thought gamifying the sorry state of existence would make it easier to exist. But the only way it gets easier is if you win.[/shake] "
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]To win, your choices have to matter. Too bad you have no choices. But maybe you could if you made the schedule… [/shake]"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=30.0 level=5 connected=1]Since nothing matters, have you ever thought about burning it all down?[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": " [shake rate=30.0 level=5 connected=1]Consider it.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=30.0 level=5 connected=1]Consider burning it all down with Becky inside.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=30.0 level=5 connected=1]Then there will only be one of us. [/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=30.0 level=5 connected=1]There will only be one Becky…[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=30.0 level=5 connected=1]You know what you need to do. She’s coming.[/shake]"
 		},
 		{
 			"call_node": {

@@ -9,13 +9,13 @@
 	"nickname": "",
 	"nickname_bool": false,
 	"offset_x": 0,
-	"offset_y": 0,
+	"offset_y": 10,
 	"portraits": [
 		{
 			"name": "Default",
-			"path": "res://Assets/Portraits/psychic.png"
+			"path": "res://Assets/Portraits/Psychic.png"
 		}
 	],
 	"scale": 35,
-	"theme": ""
+	"theme": "theme-1689644577.cfg"
 }

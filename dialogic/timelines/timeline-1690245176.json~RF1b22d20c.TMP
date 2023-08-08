@@ -69,7 +69,13 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[shake rate=20.0 level=5 connected=1]You’ve switched from American Spirits to Camels, from craft beer to Karkov vodka, and it’s still just you and Becky…day after day, night after night…in this store.[/shake]"
+			"text": "[shake rate=20.0 level=5 connected=1]You’ve switched from American Spirits to Camels, from craft beer to Karkov vodka, and it’s still just you and Becky…[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]day after day, night after night…in this store.[/shake]"
 		},
 		{
 			"character": "",
@@ -81,13 +87,19 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[shake rate=20.0 level=5 connected=1]Becky is still your boss…and she still won’t let you change the radio station…\nAll 90s rock, all day, forever baby…[/shake]"
+			"text": "[shake rate=20.0 level=5 connected=1]Becky is still your boss…and she still won’t let you change the radio station…All 90s rock, all day, forever, baby…[/shake]"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[shake rate=20.0 level=5 connected=1]Jeff still comes in daily with the same request\nHey I got 20 on the diesel on pump 3 and a pack of cowboy killers if you don’t mind.[/shake]"
+			"text": "[shake rate=20.0 level=5 connected=1]Jeff still comes in daily with the same request[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]\"Hey, I got...uhhh...20 on the diesel on pump3 and a pack of cowboy killers if you don’t mind.[/shake]"
 		},
 		{
 			"character": "",
@@ -99,64 +111,25 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[shake rate=20.0 level=5 connected=1]You see your old classmates jetting off to college, their new jobs, or starting families to doom their satan spawn to another generation of suffering in this shithole town.[/shake]"
+			"text": "[shake rate=20.0 level=5 connected=1]You see your old classmates jetting off to college, their new jobs...[/shake]"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[shake rate=20.0 level=5 connected=1]The voice in your head keeps you entertained…but less so these days…the Karkov keeps it quiet…quieter. Becky taught you that trick.[/shake]"
+			"text": "[shake rate=20.0 level=5 connected=1]or starting families to doom their satan spawn to another generation of suffering in this shithole town.[/shake]"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[shake rate=20.0 level=5 connected=1]Sometimes a customer will ask\nAre you alright? Seems you drifted off for a second…when the voice starts chatting away. \nYou always answer “living the dream” [/shake]"
+			"text": "[shake rate=20.0 level=5 connected=1]The voice in your head keeps you entertained…but less so these days…the Karkov keeps it quiet…quieter.[/shake]"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[shake rate=20.0 level=5 connected=1]You grow old, frail, and eventually wither away in this very store…[/shake]"
-		},
-		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "[shake rate=20.0 level=5 connected=1]Turns out a lifetime of gas station burgers isn’t too kind on the ol’ aorta.[/shake]"
-		},
-		{
-			"character": "",
-			"event_id": "dialogic_010",
-			"options": [
-
-			],
-			"portrait": "",
-			"question": "[shake rate=20.0 level=5 connected=1]Did you think you’d work here your entire life?[/shake]"
-		},
-		{
-			"choice": "No this is just a summer gig, I’m moving to the city in September",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"choice": "That was bullshit, I’m out of here as soon as I scrape together some cash",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"choice": "I think I knew I’d be stuck in this town forever in my heart of hearts",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"event_id": "dialogic_013"
+			"text": "[shake rate=20.0 level=5 connected=1]Becky taught you that trick.[/shake]"
 		},
 		{
 			"call_node": {

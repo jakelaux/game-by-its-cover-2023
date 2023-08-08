@@ -54,8 +54,14 @@
 			"text": "I'm so tired, I can barely remember my name...what is it again?"
 		},
 		{
-			"emit_signal": "player_name_capture",
-			"event_id": "dialogic_040"
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "player_name_capture",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
 		},
 		{
 			"event_id": "dialogic_022",

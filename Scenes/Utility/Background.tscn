@@ -23,7 +23,8 @@ margin_right = 40.0
 margin_bottom = 40.0
 texture = ExtResource( 2 )
 
-[node name="Counter" type="Sprite" parent="."]
-position = Vector2( 1005, 670 )
-z_index = 2
+[node name="Counter" type="TextureRect" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
 texture = ExtResource( 1 )

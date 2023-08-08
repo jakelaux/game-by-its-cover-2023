@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Psychic.png-66d95c9c11ec2c39cab4a8ccaba26c79.stex"
+path="res://.import/Gossip.png-4a1df77721bcc1bcf0c264993e07c71f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Portraits/Psychic.png"
-dest_files=[ "res://.import/Psychic.png-66d95c9c11ec2c39cab4a8ccaba26c79.stex" ]
+source_file="res://Assets/Portraits/Gossip.png"
+dest_files=[ "res://.import/Gossip.png-4a1df77721bcc1bcf0c264993e07c71f.stex" ]
 
 [params]
 

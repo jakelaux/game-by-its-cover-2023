@@ -168,7 +168,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[shake rate=30.0 level=5 connected=1]You justify it by saying you're looking within yourself...but I'm the only interesting part of you aren't I?[/shake]"
+			"text": "[shake rate=30.0 level=5 connected=1]You justify it by saying you're looking within yourself...but I'm the only interesting part of you, aren't I?[/shake]"
 		},
 		{
 			"definition": "1690238927-374",

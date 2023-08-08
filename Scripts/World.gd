@@ -19,15 +19,16 @@ onready var tween			= $Tween
 onready var menu_screen		= $MenuScreen
 onready var noise			= OpenSimplexNoise.new()
 onready var rand			= RandomNumberGenerator.new()
+onready var counter			= $Background/Counter
+onready var portrait_cutoff = $Counter
 
-const tutorial		= preload("res://Scenes/Tutorial/Tutorial.tscn")
+const user_input_scene	= preload("res://Scenes/Utility/userInput.tscn")
 
 var noise_i 		= 0.0
 var shake_strength 	= 0.0
 var shake			= "SWAY"
 var camera_default	= Vector2(0,0)
-
-#Player State Defaults
+var dialog
 
 func _ready():
 	rand.randomize()
@@ -42,13 +43,12 @@ func start_game():
 	menu_camera.current = false
 	camera.current = true
 	menu_screen.visible = false
-	var tutorial_instance = tutorial.instance()
 	background.visible = true
 	background.modulate.a = 0.0
 	start_fade_in(background)
 	radio.start_radio()
-	tutorial_instance.connect('tutorial_completed',self,"close_tutorial")
-	call_deferred("add_child",tutorial_instance)
+	dialog = Dialogic.start('Tutorial')
+	call_deferred("add_child",dialog)
 
 func start_fade_in(background_image):
 	tween.interpolate_property(background_image, "modulate", Color(1, 1, 1, 0), Color(1, 1, 1, 1), 1.0, Tween.TRANS_LINEAR)
@@ -69,10 +69,6 @@ func damage_sanity():
 	shake = "SHAKE"
 	sanity_timer.start()
 	intrusive_thought()
-	
-func close_tutorial():
-	var tutorial_2 = Dialogic.start('Tutorial pt.2')
-	add_child(tutorial_2)
 
 func apply_shake():
 	shake_strength = NOISE_SHAKE_STRENGTH
@@ -83,6 +79,19 @@ func get_noise_offset(delta,speed,strength):
 		noise.get_noise_2d(1,noise_i)*strength,
 		noise.get_noise_2d(100,noise_i)*strength
 	)
+
+func player_name_capture():
+	var user_input = user_input_scene.instance()
+	var input_box  = user_input.get_node("userInput/input")
+	input_box.placeholder_text = "What's my name again?"
+	user_input.connect('user_input_completed',self,"update_user_name")
+	get_tree().root.add_child(user_input)
+
+func update_user_name(name):
+	Dialogic.set_variable('player_name',name)
+	var tutorial_2 = Dialogic.start('Tutorial pt.2')
+	dialog = tutorial_2
+	add_child(tutorial_2)
 
 func intrusive_thought():
 	glitch.visible = true
@@ -100,6 +109,3 @@ func unblur_vision():
 
 func _on_SanityTimer_timeout():
 	shake = "SWAY"
-
-func _on_blurTimer_timeout():
-	blur.visible = false

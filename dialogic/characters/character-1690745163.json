@@ -13,9 +13,9 @@
 	"portraits": [
 		{
 			"name": "Default",
-			"path": ""
+			"path": "res://Assets/Portraits/Gossip.png"
 		}
 	],
-	"scale": 100,
-	"theme": ""
+	"scale": 35,
+	"theme": "theme-1689644577.cfg"
 }

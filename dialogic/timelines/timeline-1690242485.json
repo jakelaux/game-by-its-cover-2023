@@ -155,7 +155,7 @@
 			"character": "character-1690242511.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Cool, I'll go try to find some of the supplies I need...thanks"
+			"text": "Cool, I'll go try to find some of the supplies I need...Thanks."
 		},
 		{
 			"character": "character-1690242511.json",
@@ -456,7 +456,7 @@
 			"question": "You hesitate before giving the door three loud knocks.\nYou hear \"Just a minute!\" in response."
 		},
 		{
-			"choice": "Bro, what's going on in there?",
+			"choice": "Uhhh, what's going on in there?",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -472,7 +472,7 @@
 			"question": "It's fine. Everything's fine. One more minute."
 		},
 		{
-			"choice": "uhh, okay",
+			"choice": "Uhhh, okay",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -508,7 +508,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "You walk in on the man taking a shit. Everything appears normal. The time traveler says nothing. He just stares at you blankly."
+			"text": "You walk in on the man taking a shit. Everything appears normal. He says nothing. He just stares at you blankly...confused and alarmed."
 		},
 		{
 			"definition": "1690501993-133",
@@ -546,22 +546,15 @@
 		},
 		{
 			"character": "character-1690242511.json",
-			"event_id": "dialogic_010",
-			"options": [
-
-			],
+			"event_id": "dialogic_001",
 			"portrait": "",
-			"question": "The man comes back from the bathroom. He slides a can of beans onto the counter and returns the key. The key is twisted beyond repair."
+			"text": "The man comes back from the bathroom and hands you the key...it is twisted beyond repair."
 		},
 		{
-			"choice": "He sheepishly slides a can of beans on the counter and says \"I'm taking this\".",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"event_id": "dialogic_013"
+			"character": "character-1690242511.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "He flashes you a can of beans and says \"I'm taking this\" as he walks out the door. "
 		},
 		{
 			"event_id": "dialogic_013"

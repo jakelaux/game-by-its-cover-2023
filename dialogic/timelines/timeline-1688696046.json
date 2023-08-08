@@ -63,6 +63,10 @@
 			"text": "What the hell was that…"
 		},
 		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",

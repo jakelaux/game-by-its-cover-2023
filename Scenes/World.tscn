@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Scripts/World.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Utility/Background.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Resources/sanity.tres" type="Shader" id=6]
 [ext_resource path="res://Resources/blur_shader.tres" type="Shader" id=7]
 [ext_resource path="res://Resources/noise.tres" type="Shader" id=8]
+[ext_resource path="res://Assets/Background/Game_Jam_BG (2).png" type="Texture" id=9]
 [ext_resource path="res://Scenes/Utility/MenuScreen.tscn" type="PackedScene" id=10]
 
 [sub_resource type="ShaderMaterial" id=1]
@@ -43,10 +44,6 @@ script = ExtResource( 1 )
 process_mode = 0
 one_shot = true
 
-[node name="blurTimer" type="Timer" parent="."]
-process_mode = 0
-one_shot = true
-
 [node name="GameCamera" parent="." instance=ExtResource( 3 )]
 
 [node name="Radio" parent="." instance=ExtResource( 4 )]
@@ -54,6 +51,9 @@ one_shot = true
 [node name="Background" parent="." instance=ExtResource( 2 )]
 margin_top = -46.0
 margin_bottom = 1258.0
+
+[node name="Counter" parent="Background" index="2"]
+visible = true
 
 [node name="Shaders" type="CanvasLayer" parent="."]
 
@@ -93,9 +93,18 @@ margin_bottom = 839.0
 scale = Vector2( 43475, -14911.3 )
 offset = Vector2( 540, 360 )
 
+[node name="Counter" type="TextureRect" parent="."]
+margin_left = -59.0
+margin_top = -46.0
+margin_right = 1941.0
+margin_bottom = 1301.0
+rect_scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 9 )
+
 [node name="MenuScreen" parent="." instance=ExtResource( 10 )]
+margin_right = 1080.0
+margin_bottom = 720.0
 
 [connection signal="timeout" from="SanityTimer" to="." method="_on_SanityTimer_timeout"]
-[connection signal="timeout" from="blurTimer" to="." method="_on_blurTimer_timeout"]
 
 [editable path="Background"]

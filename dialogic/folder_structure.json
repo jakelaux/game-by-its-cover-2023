@@ -26,7 +26,10 @@
 				"1690244779-516",
 				"1690245371-386",
 				"1690501993-133",
-				"1691259315-648"
+				"1691259315-648",
+				"1691334545-787",
+				"1691360721-366",
+				"1691452266-146"
 			],
 			"folders": {
 
@@ -54,7 +57,7 @@
 		},
 		"Timelines": {
 			"files": [
-				"timeline-1691266761.json"
+
 			],
 			"folders": {
 				"Becky": {
@@ -78,7 +81,7 @@
 					},
 					"metadata": {
 						"color": null,
-						"folded": false
+						"folded": true
 					}
 				},
 				"Intrusive": {
@@ -94,7 +97,7 @@
 					},
 					"metadata": {
 						"color": null,
-						"folded": false
+						"folded": true
 					}
 				},
 				"Psychic": {
@@ -118,7 +121,7 @@
 					},
 					"metadata": {
 						"color": null,
-						"folded": true
+						"folded": false
 					}
 				},
 				"Tutorial": {

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/time-traveler.png-94ddb5405047fced847c85d3d85d6425.stex"
+path="res://.import/Becky.png-b73bc4a5a678c3d1e03a6675eca865e0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Portraits/time-traveler.png"
-dest_files=[ "res://.import/time-traveler.png-94ddb5405047fced847c85d3d85d6425.stex" ]
+source_file="res://Assets/Portraits/Becky.png"
+dest_files=[ "res://.import/Becky.png-b73bc4a5a678c3d1e03a6675eca865e0.stex" ]
 
 [params]
 

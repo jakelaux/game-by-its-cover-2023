@@ -13,9 +13,9 @@
 	"portraits": [
 		{
 			"name": "Default",
-			"path": "res://Assets/Portraits/time-traveler.png"
+			"path": "res://Assets/Portraits/Traveler.png"
 		}
 	],
 	"scale": 35,
-	"theme": ""
+	"theme": "theme-1689644577.cfg"
 }
