@@ -1,6 +1,14 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scripts/MenuScreen.gd" type="Script" id=1]
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.4, 0.0588235, 0.192157, 1 )
+
+[sub_resource type="Theme" id=3]
+Button/colors/font_color = Color( 1, 1, 1, 1 )
+Button/fonts/font = null
+Button/styles/normal = SubResource( 4 )
 
 [sub_resource type="StyleBoxFlat" id=2]
 bg_color = Color( 0.152941, 0, 0.133333, 1 )
@@ -31,6 +39,7 @@ margin_bottom = 245.0
 margin_right = 600.0
 margin_bottom = 49.0
 size_flags_vertical = 3
+theme = SubResource( 3 )
 text = "Start"
 
 [node name="Settings" type="Button" parent="VBoxContainer"]
@@ -46,6 +55,23 @@ margin_right = 600.0
 margin_bottom = 155.0
 size_flags_vertical = 3
 text = "Credits"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+visible = false
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 240.0
+margin_top = 90.0
+margin_right = -240.0
+margin_bottom = 137.0
+
+[node name="PlayAgain" type="Button" parent="VBoxContainer2"]
+margin_right = 600.0
+margin_bottom = 47.0
+size_flags_vertical = 3
+theme = SubResource( 3 )
+text = "Return to Menu"
 
 [node name="Credits" type="ColorRect" parent="."]
 visible = false
@@ -200,6 +226,7 @@ value = -10.0
 [connection signal="pressed" from="VBoxContainer/StartGame" to="." method="_on_StartGame_pressed"]
 [connection signal="pressed" from="VBoxContainer/Settings" to="." method="_on_Settings_pressed"]
 [connection signal="pressed" from="VBoxContainer/Credits" to="." method="_on_Credits_pressed"]
+[connection signal="pressed" from="VBoxContainer2/PlayAgain" to="." method="_on_PlayAgain_pressed"]
 [connection signal="pressed" from="Credits/CloseCredits" to="." method="_on_CloseCredits_pressed"]
 [connection signal="pressed" from="Settings/CloseSettings" to="." method="_on_CloseSettings_pressed"]
 [connection signal="value_changed" from="Settings/VBoxContainer/MasterAudio" to="." method="_on_MasterAudio_value_changed"]

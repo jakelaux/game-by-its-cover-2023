@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sound-ambience-sonido-ambiente-23-14211.mp3-75219f5a5d7146685c3a5005bc604fce.mp3str"
+
+[deps]
+
+source_file="res://Audio/Game Music/sound-ambience-sonido-ambiente-23-14211.mp3"
+dest_files=[ "res://.import/sound-ambience-sonido-ambiente-23-14211.mp3-75219f5a5d7146685c3a5005bc604fce.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

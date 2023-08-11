@@ -1,8 +1,8 @@
 extends Camera2D
 
-export var pan_speed 	  = 200
+export var pan_speed 	  = 50
 export var pan_area_size  = 25
-export var recenter_speed = 200
+export var recenter_speed = 100
 
 onready var background 		  = $"../Background"
 onready var background_center = $"../Background/BackgroundCenter"

@@ -1,6 +1,8 @@
 tool
 extends Control
 
+onready var portraits = $CanvasLayer/Portraits
+
 ## -----------------------------------------------------------------------------
 ## 						VARIABLES
 ## -----------------------------------------------------------------------------
@@ -354,10 +356,10 @@ func load_theme(filename):
 	
 	load_audio(theme)
 	
-	if theme.get_value('box', 'portraits_behind_dialog_box', true):
-		move_child($Portraits, 0)
-	else:
-		move_child($Portraits, 1)
+	#if theme.get_value('box', 'portraits_behind_dialog_box', true):
+	#	move_child(portraits, 0)
+	#else:
+	#	move_child(portraits, 1)
 	
 	return theme
 
@@ -703,7 +705,7 @@ func event_handler(event: Dictionary):
 					p.set_mirror(event.get('mirror_portrait', false))
 					
 					# ADD IT TO THE SCENE
-					$Portraits.add_child(p)
+					portraits.add_child(p)
 					p.move_to_position(get_character_position(event['position']))
 					event = insert_animation_data(event, 'join', 'fade_in_up.gd')
 					p.animate(event.get('animation', '[No Animation]'), event.get('animation_length', 1))
@@ -711,9 +713,8 @@ func event_handler(event: Dictionary):
 					p.current_state['position'] = event['position']
 					
 					# z_index
-					$Portraits.move_child(p, get_portrait_z_index_point(event.get('z_index', 0)))
+					portraits.move_child(p, get_portrait_z_index_point(event.get('z_index', 0)))
 					p.z_index = event.get('z_index', 0)
-					
 					if event.get('animation_wait', false):
 						yield(p, 'animation_finished')
 					
@@ -727,7 +728,7 @@ func event_handler(event: Dictionary):
 							$DialogicTimer.start(event.get('animation_duration', 1))
 							yield($DialogicTimer, "timeout")
 					else:
-						for p in $Portraits.get_children():
+						for p in portraits.get_children():
 							if is_instance_valid(p) and p.character_data['file'] == event['character']:
 								event = insert_animation_data(event, 'leave', 'fade_out_down.gd')
 								p.animate(event.get('animation', 'instant_out.gd'), event.get('animation_length', 1), 1, true)
@@ -737,7 +738,7 @@ func event_handler(event: Dictionary):
 				# UPDATE MODE -------------------------------------------
 				else:
 					if portrait_exists(character_data):
-						for portrait in $Portraits.get_children():
+						for portrait in portraits.get_children():
 							if portrait.character_data.get('file', true) == character_data.get('file', false):
 								# UPDATE PORTRAIT
 								var portrait_name = get_portrait_name(event)
@@ -756,7 +757,7 @@ func event_handler(event: Dictionary):
 									portrait.set_mirror(event.get('mirror_portrait', false))
 								
 								if event.get('change_z_index', false):
-									$Portraits.move_child(portrait, get_portrait_z_index_point(event.get('z_index', 0)))
+									portraits.move_child(portrait, get_portrait_z_index_point(event.get('z_index', 0)))
 									portrait.z_index = event.get('z_index', 0)
 								
 								portrait.animate(event.get('animation', '[No Animation]'), event.get('animation_length', 1), event.get('animation_repeat', 1))
@@ -1298,7 +1299,7 @@ func handle_voice(event):
 # defocuses all characters except the given one
 func grab_portrait_focus(character_data, event: Dictionary = {}) -> bool:
 	var exists = false
-	for portrait in $Portraits.get_children():
+	for portrait in portraits.get_children():
 		# check if it's the same character
 		if portrait.character_data.get("file", "something") == character_data.get("file", "none"):
 			exists = true
@@ -1317,7 +1318,7 @@ func grab_portrait_focus(character_data, event: Dictionary = {}) -> bool:
 # returns true if the a portrait for that character already exists
 func portrait_exists(character_data) -> bool:
 	var exists = false
-	for portrait in $Portraits.get_children():
+	for portrait in portraits.get_children():
 		if portrait.character_data.get('file', true) == character_data.get('file', false):
 			exists = true
 	return exists
@@ -1371,10 +1372,10 @@ func characters_leave_all(animation, time):
 
 # returns where to move the portrait, so the fake-z-index looks good 
 func get_portrait_z_index_point(z_index):
-	for i in range($Portraits.get_child_count()):
-		if $Portraits.get_child(i).z_index >= z_index:
+	for i in range(portraits.get_child_count()):
+		if portraits.get_child(i).z_index >= z_index:
 			return i
-	return $Portraits.get_child_count()
+	return portraits.get_child_count()
 ## -----------------------------------------------------------------------------
 ## 						GLOSSARY POPUP
 ## -----------------------------------------------------------------------------
@@ -1473,7 +1474,7 @@ func get_current_state_info():
 
 	# visible characters:
 	state["portraits"] = []
-	for portrait in $Portraits.get_children():
+	for portrait in portraits.get_children():
 		state['portraits'].append(portrait.current_state)
 		state['portraits'][-1]['z_index'] = portrait.z_index
 
@@ -1506,7 +1507,7 @@ func resume_state_from_info(state_info):
 		# this code is ALL copied from the event_handler. So I should probably outsource it to a function...
 		var character_data = DialogicUtil.get_character(event['character'])
 		if portrait_exists(character_data):
-			for portrait in $Portraits.get_children():
+			for portrait in portraits.get_children():
 				if portrait.character_data == character_data:
 					portrait.move_to_position(get_character_position(event['position']))
 					portrait.set_mirror(event.get('mirror', false))
@@ -1531,8 +1532,8 @@ func resume_state_from_info(state_info):
 			p.init(char_portrait)
 
 			p.set_mirror(event.get('mirror', false))
-			$Portraits.add_child(p)
-			$Portraits.move_child(p, get_portrait_z_index_point(saved_portrait.get('z_index', 0)))
+			portraits.add_child(p)
+			portraits.move_child(p, get_portrait_z_index_point(saved_portrait.get('z_index', 0)))
 			p.move_to_position(get_character_position(event['position']))
 			# this info is only used to save the state later
 			p.current_state['character'] = event['character']

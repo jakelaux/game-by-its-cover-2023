@@ -1,6 +1,7 @@
 extends Control
 
 signal start_game
+signal play_again
 
 onready var credits  = $Credits
 onready var settings = $Settings 
@@ -43,3 +44,6 @@ func _on_StoreRadio_value_changed(value):
 
 func _on_GameMusic_value_changed(value):
 	handle_audio_bus_change(music_bus,value)
+
+func _on_PlayAgain_pressed():
+	emit_signal("play_again")

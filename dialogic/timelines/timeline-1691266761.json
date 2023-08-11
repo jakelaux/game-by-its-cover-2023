@@ -350,6 +350,26 @@
 			"set_value": "partner"
 		},
 		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Have you ever thought of burning this place down?"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Just every day I’ve worked here…but..."
+		},
+		{
 			"choice": "Have you ever thought of burning this place down?",
 			"condition": "",
 			"definition": "",
@@ -446,6 +466,39 @@
 		},
 		{
 			"character": "character-1690745174.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "You...really wanna burn this place down?"
+		},
+		{
+			"choice": "I have to...",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "I need to...",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "More than anything...",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1690745174.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Okay. Damn."
@@ -469,7 +522,7 @@
 			"text": "He’d kill you."
 		},
 		{
-			"character": "",
+			"character": "character-1690745174.json",
 			"event_id": "dialogic_010",
 			"options": [
 
@@ -702,6 +755,21 @@
 			"z_index": 0
 		},
 		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 2
+		},
+		{
+			"call_node": {
+				"arguments": [
+					"ending1"
+				],
+				"method_name": "call_ending",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
 			"event_id": "dialogic_024",
 			"set_theme": "theme-1690342652.cfg"
 		},
@@ -726,6 +794,16 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Want to skip town?"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "show_back_to_menu",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -980,7 +1058,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[shake rate=20.0 level=5 connected=1]You flick the lighter, drop it on the counter, and stroll out the front door. [/shake]"
+			"text": "[shake rate=20.0 level=5 connected=1]You flick the lighter, drop it on the counter. [/shake]"
 		},
 		{
 			"event_id": "dialogic_024",
@@ -1015,6 +1093,21 @@
 			"event_name": "AudioEvent",
 			"file": "res://Audio/sfx/leave_store_w_steps.wav",
 			"volume": 0
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 2
+		},
+		{
+			"call_node": {
+				"arguments": [
+					"ending2"
+				],
+				"method_name": "call_ending",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
 		},
 		{
 			"character": "",
@@ -1090,6 +1183,16 @@
 			"event_id": "dialogic_042"
 		},
 		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "show_back_to_menu",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
 			"event_id": "dialogic_013"
 		},
 		{
@@ -1151,13 +1254,13 @@
 			"text": "Put the gas down and please get some rest…"
 		},
 		{
-			"character": "",
+			"character": "character-1690745174.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Do you have anywhere to crash?"
 		},
 		{
-			"character": "",
+			"character": "character-1690745174.json",
 			"event_id": "dialogic_010",
 			"options": [
 
@@ -1195,16 +1298,6 @@
 			"event_id": "dialogic_013"
 		},
 		{
-			"call_node": {
-				"arguments": [
-
-				],
-				"method_name": "damage_sanity",
-				"target_node_path": "/root/World"
-			},
-			"event_id": "dialogic_042"
-		},
-		{
 			"audio": "play",
 			"audio_bus": "Master",
 			"event_id": "dialogic_030",
@@ -1213,8 +1306,19 @@
 			"volume": 0
 		},
 		{
-			"event_id": "dialogic_024",
-			"set_theme": "default-theme.cfg"
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 2
+		},
+		{
+			"call_node": {
+				"arguments": [
+					"ending3"
+				],
+				"method_name": "call_ending",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
 		},
 		{
 			"character": "",
@@ -1275,7 +1379,7 @@
 				"arguments": [
 
 				],
-				"method_name": "end_intrusive_thought",
+				"method_name": "show_back_to_menu",
 				"target_node_path": "/root/World"
 			},
 			"event_id": "dialogic_042"

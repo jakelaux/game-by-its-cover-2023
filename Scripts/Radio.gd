@@ -15,6 +15,7 @@ var audio_index = 0
 var cur_audio
 var songs
 var bumps
+var playback_pos
 
 func _ready():
 	randomize()
@@ -37,9 +38,10 @@ func to_song():
 	songs[audio_index].play()
 	cur_audio = songs[audio_index]
 func pause_radio():
-	cur_audio.pause()
+	playback_pos = songs[audio_index].get_playback_position()
+	songs[audio_index].stop()
 func play_radio():
-	cur_audio.play()
+	songs[audio_index].play(playback_pos)
 func shuffle_radio():
 	songs.shuffle()
 	bumps.shuffle()

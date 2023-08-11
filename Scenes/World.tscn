@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Scripts/World.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Utility/Background.tscn" type="PackedScene" id=2]
@@ -8,8 +8,11 @@
 [ext_resource path="res://Resources/sanity.tres" type="Shader" id=6]
 [ext_resource path="res://Resources/blur_shader.tres" type="Shader" id=7]
 [ext_resource path="res://Resources/noise.tres" type="Shader" id=8]
-[ext_resource path="res://Assets/Background/Game_Jam_BG (2).png" type="Texture" id=9]
+[ext_resource path="res://Audio/Game Music/intrusive.wav" type="AudioStream" id=9]
 [ext_resource path="res://Scenes/Utility/MenuScreen.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Audio/Game Music/ending_fire.wav" type="AudioStream" id=11]
+[ext_resource path="res://Audio/Game Music/ending.wav" type="AudioStream" id=12]
+[ext_resource path="res://Audio/Game Music/sound-ambience-sonido-ambiente-23-14211.mp3" type="AudioStream" id=13]
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 7 )
@@ -31,9 +34,9 @@ shader_param/speed = 99.689
 
 [sub_resource type="ShaderMaterial" id=3]
 shader = ExtResource( 6 )
-shader_param/vignette_intensity = 1.0
-shader_param/vignette_opacity = 0.76
-shader_param/vignette_rgb = Color( 1, 0, 0, 1 )
+shader_param/vignette_intensity = 2.0
+shader_param/vignette_opacity = 0.715
+shader_param/vignette_rgb = Color( 1, 0.0196078, 0.27451, 1 )
 
 [node name="World" type="Node2D"]
 script = ExtResource( 1 )
@@ -44,16 +47,33 @@ script = ExtResource( 1 )
 process_mode = 0
 one_shot = true
 
+[node name="Background" parent="." instance=ExtResource( 2 )]
+
 [node name="GameCamera" parent="." instance=ExtResource( 3 )]
 
 [node name="Radio" parent="." instance=ExtResource( 4 )]
 
-[node name="Background" parent="." instance=ExtResource( 2 )]
-margin_top = -46.0
-margin_bottom = 1258.0
+[node name="GameMusicManager" type="Node2D" parent="."]
 
-[node name="Counter" parent="Background" index="2"]
-visible = true
+[node name="IntrusiveMusic" type="AudioStreamPlayer2D" parent="GameMusicManager"]
+stream = ExtResource( 9 )
+volume_db = -5.0
+bus = "GameMusic"
+
+[node name="EndingMusicFire" type="AudioStreamPlayer2D" parent="GameMusicManager"]
+stream = ExtResource( 11 )
+volume_db = -8.0
+bus = "GameMusic"
+
+[node name="EndingMusic" type="AudioStreamPlayer2D" parent="GameMusicManager"]
+stream = ExtResource( 12 )
+volume_db = -8.0
+bus = "GameMusic"
+
+[node name="GameAmbientMusic" type="AudioStreamPlayer2D" parent="GameMusicManager"]
+stream = ExtResource( 13 )
+volume_db = -13.748
+bus = "GameMusic"
 
 [node name="Shaders" type="CanvasLayer" parent="."]
 
@@ -90,20 +110,14 @@ margin_right = 1252.0
 margin_bottom = 839.0
 
 [node name="MenuCamera" type="Camera2D" parent="."]
-scale = Vector2( 43475, -14911.3 )
 offset = Vector2( 540, 360 )
 
-[node name="Counter" type="TextureRect" parent="."]
-margin_left = -59.0
-margin_top = -46.0
-margin_right = 1941.0
-margin_bottom = 1301.0
-rect_scale = Vector2( 0.6, 0.6 )
-texture = ExtResource( 9 )
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
 
-[node name="MenuScreen" parent="." instance=ExtResource( 10 )]
-margin_right = 1080.0
-margin_bottom = 720.0
+[node name="MenuScreen" parent="CanvasLayer2" instance=ExtResource( 10 )]
+__meta__ = {
+"_edit_lock_": true
+}
 
 [connection signal="timeout" from="SanityTimer" to="." method="_on_SanityTimer_timeout"]
 

@@ -141,31 +141,31 @@
 			"event_id": "dialogic_013"
 		},
 		{
-			"character": "",
+			"character": "character-1690745163.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "You’re [player_name], right? You’re that fire kid…"
 		},
 		{
-			"character": "",
+			"character": "character-1690745163.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "You burned down the bleachers at the old abandoned middle school…."
 		},
 		{
-			"character": "",
+			"character": "character-1690745163.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "At first everyone thought it was arson but they caught you on that security camera playing with bottle rockets all by yourself…"
 		},
 		{
-			"character": "",
+			"character": "character-1690745163.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Kind of sad, really..."
 		},
 		{
-			"character": "",
+			"character": "character-1690745163.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Why were you alone? "
@@ -348,7 +348,7 @@
 			"value": ""
 		},
 		{
-			"character": "",
+			"character": "character-1690745163.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Uhh, okay. I guess you’re as weird as Becky said you were..."

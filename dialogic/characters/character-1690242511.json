@@ -9,13 +9,13 @@
 	"nickname": "",
 	"nickname_bool": false,
 	"offset_x": 0,
-	"offset_y": 0,
+	"offset_y": -150,
 	"portraits": [
 		{
 			"name": "Default",
 			"path": "res://Assets/Portraits/Traveler.png"
 		}
 	],
-	"scale": 35,
+	"scale": 30,
 	"theme": "theme-1689644577.cfg"
 }

@@ -16,6 +16,7 @@ var direction = 'left'
 var debug = false
 var fading_out = false
 var custom_instance : Node2D = null
+var original_position
 
 var current_state := {'character':'', 'portrait':'', 'position':'', 'mirrored':false}
 
@@ -31,7 +32,10 @@ func _ready():
 		print(rect_position, $TextureRect.rect_size)
 	
 	$AnimationTween.connect('finished_animation', self, 'emit_signal', ['animation_finished'])
+	original_position = $TextureRect.rect_position
 
+func _process(delta):
+	move_with_sway()
 
 func set_portrait(expression: String) -> void:
 	if expression == "(Don't change)":
@@ -204,3 +208,8 @@ func get_mirror_scale(current_scale:float, mirror_value:bool) -> int:
 		return -1
 	else:
 		return 1
+
+func move_with_sway():
+	var world  = get_node("/root/World")
+	var offset = (world.get_shake_offset() / 40)
+	$TextureRect.rect_position += offset

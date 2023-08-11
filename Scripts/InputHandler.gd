@@ -2,10 +2,10 @@ extends Node2D
 
 signal user_input_completed
 
-onready var user_input	= $userInput
-onready var input		= $userInput/input
-onready var validation	= $validation
-onready var label		= $validation/label
+onready var user_input	= $CanvasLayer/userInput
+onready var input		= $CanvasLayer/userInput/input
+onready var validation	= $CanvasLayer/validation
+onready var label		= $CanvasLayer/validation/label
 
 func _on_waitForFade_timeout():
 	user_input.visible = true

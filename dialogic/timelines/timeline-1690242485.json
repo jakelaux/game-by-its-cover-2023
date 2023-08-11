@@ -197,23 +197,30 @@
 			"set_value": "no"
 		},
 		{
-			"character": "",
-			"event_id": "dialogic_010",
-			"options": [
-
-			],
+			"character": "character-1690242511.json",
+			"event_id": "dialogic_001",
 			"portrait": "",
-			"question": "Seriously?"
+			"text": "Seriously?"
 		},
 		{
-			"choice": "No you can't use the bathroom, you always take forever and I know you're up to something in there",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
 		},
 		{
-			"event_id": "dialogic_013"
+			"character": "character-1690242511.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "No I don't think I can let you use the bathroom from now on...you always take forever and make weird noises...I know you're up to something in there."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"character": "character-1690242511.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Whatever..."
 		},
 		{
 			"event_id": "dialogic_013"
@@ -606,6 +613,15 @@
 		},
 		{
 			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1690242511.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Whatever..."
 		},
 		{
 			"audio": "play",

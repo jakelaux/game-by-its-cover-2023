@@ -8,42 +8,55 @@
 position = Vector2( 400, 500 )
 script = ExtResource( 2 )
 
-[node name="userInput" type="HBoxContainer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 2
 
-[node name="ColorRect" type="ColorRect" parent="userInput"]
-margin_left = -5.0
-margin_right = 155.0
-margin_bottom = 15.0
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+margin_left = 389.0
+margin_top = 492.0
+margin_right = 739.0
+margin_bottom = 542.0
+rect_min_size = Vector2( 270, 0 )
 color = Color( 0, 0, 0, 1 )
 
-[node name="caret" type="Label" parent="userInput"]
-margin_left = 4.0
-margin_right = 12.0
+[node name="userInput" type="HBoxContainer" parent="CanvasLayer"]
+margin_left = 400.0
+margin_top = 500.0
+margin_right = 725.0
+margin_bottom = 514.0
+
+[node name="caret" type="Label" parent="CanvasLayer/userInput"]
+margin_right = 8.0
 margin_bottom = 14.0
 text = ">"
 
-[node name="input" type="LineEdit" parent="userInput"]
-margin_left = 16.0
-margin_right = 64.0
+[node name="input" type="LineEdit" parent="CanvasLayer/userInput"]
+margin_left = 12.0
+margin_right = 325.0
 margin_bottom = 14.0
 size_flags_horizontal = 3
 custom_styles/normal = SubResource( 1 )
 max_length = 50
 
-[node name="validation" type="VBoxContainer" parent="."]
+[node name="validation" type="VBoxContainer" parent="CanvasLayer"]
+visible = false
+margin_left = 400.0
+margin_top = 500.0
+margin_right = 400.0
+margin_bottom = 514.0
 
-[node name="label" type="Label" parent="validation"]
+[node name="label" type="Label" parent="CanvasLayer/validation"]
 margin_bottom = 14.0
 size_flags_horizontal = 0
 
-[node name="Yes" type="Button" parent="validation/label"]
+[node name="Yes" type="Button" parent="CanvasLayer/validation/label"]
 margin_left = -5.0
 margin_top = 16.0
 margin_right = 29.0
 margin_bottom = 36.0
 text = "Yes"
 
-[node name="No" type="Button" parent="validation/label"]
+[node name="No" type="Button" parent="CanvasLayer/validation/label"]
 margin_left = 31.0
 margin_top = 16.0
 margin_right = 61.0
@@ -54,7 +67,7 @@ text = "No"
 one_shot = true
 autostart = true
 
-[connection signal="text_entered" from="userInput/input" to="." method="_on_input_text_entered"]
-[connection signal="pressed" from="validation/label/Yes" to="." method="_on_Yes_pressed"]
-[connection signal="pressed" from="validation/label/No" to="." method="_on_No_pressed"]
+[connection signal="text_entered" from="CanvasLayer/userInput/input" to="." method="_on_input_text_entered"]
+[connection signal="pressed" from="CanvasLayer/validation/label/Yes" to="." method="_on_Yes_pressed"]
+[connection signal="pressed" from="CanvasLayer/validation/label/No" to="." method="_on_No_pressed"]
 [connection signal="timeout" from="waitForFade" to="." method="_on_waitForFade_timeout"]
