@@ -67,11 +67,8 @@ func start_game():
 	
 	
 func call_ending(ending):
-#	yield(get_tree(),"idle_frame")
 	game_ambient_music.stop()
-#	yield(get_tree(),"idle_frame")
 	intrusive_music.stop()
-#	yield(get_tree(),"idle_frame")
 	radio.pause_radio()
 	endings_canvas.visible = true
 	if ending == 'ending1' || ending == 'ending2':

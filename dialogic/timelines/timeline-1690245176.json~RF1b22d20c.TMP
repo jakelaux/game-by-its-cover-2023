@@ -99,7 +99,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[shake rate=20.0 level=5 connected=1]\"Hey, I got...uhhh...20 on the diesel on pump3 and a pack of cowboy killers if you don’t mind.[/shake]"
+			"text": "[shake rate=20.0 level=5 connected=1]\"Hey, I got…uhhh…$20 on the diesel on pump 3 and a pack of cowboy killers if you don’t mind.\"[/shake]"
 		},
 		{
 			"character": "",

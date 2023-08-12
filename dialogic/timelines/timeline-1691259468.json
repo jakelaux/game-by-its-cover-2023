@@ -76,10 +76,34 @@
 			"text": "[shake rate=20.0 level=5 connected=1]What’s the deal with this guy?[/shake]"
 		},
 		{
+			"condition": "",
+			"definition": "1690244779-516",
+			"event_id": "dialogic_012",
+			"value": "yes"
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "[shake rate=20.0 level=5 connected=1]He just used the bathroom.[/shake]"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1690244779-516",
+			"event_id": "dialogic_012",
+			"value": "no"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]You already told him he can't use the bathroom a half hour ago...[/shake]"
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"character": "",
@@ -242,7 +266,21 @@
 			"character": "character-1690745174.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I saw that. What’s he supposed to do, piss himself? (picks up key) "
+			"text": "I saw that. What’s he supposed to do, piss himself?"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "*Becky quickly walks to the back of the store, picks up the key, and walks back towards the checkout* "
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -551,7 +589,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[shake rate=20.0 level=5 connected=1]Becky must be insane, this is clearly the Tarot card she GAVE you…\nYou would be a better Becky than she ever was[/shake]"
+			"text": "[shake rate=20.0 level=5 connected=1]Becky must be insane, this is clearly the Tarot card she GAVE you…You would be a better Becky than she ever was[/shake]"
 		},
 		{
 			"call_node": {
@@ -845,13 +883,13 @@
 			"text": "You think you’re so perfect, don’t you. You play the cool girl… the nothing-can-bother-you girl…"
 		},
 		{
-			"character": "",
+			"character": "character-1690745163.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "But it’s all an act to get all of the things you claim you don’t want…"
 		},
 		{
-			"character": "",
+			"character": "character-1690745163.json",
 			"event_id": "dialogic_010",
 			"options": [
 
@@ -881,7 +919,7 @@
 			"text": "Real nice [player_name], I thought we were friends in some capacity…"
 		},
 		{
-			"character": "",
+			"character": "character-1690745174.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "I mean I know I write the schedule but we’ve had some pretty in-depth conversations…"
@@ -1011,7 +1049,7 @@
 			"set_theme": "theme-1690342652.cfg"
 		},
 		{
-			"character": "",
+			"character": "character-1690745174.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Becky crosses her arms."
@@ -1097,7 +1135,7 @@
 			"text": "And what have you ever had to overcome? "
 		},
 		{
-			"character": "",
+			"character": "character-1690745163.json",
 			"event_id": "dialogic_010",
 			"options": [
 
@@ -1148,7 +1186,7 @@
 			"set_value": "no"
 		},
 		{
-			"character": "",
+			"character": "character-1690745174.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Thanks [player_name]"
@@ -1169,7 +1207,7 @@
 			"set_value": "neutral"
 		},
 		{
-			"character": "",
+			"character": "character-1690745174.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "What the hell man, I am Becky you are [player_name]...I think the gas fumes are getting to you.."
