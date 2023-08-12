@@ -62,8 +62,7 @@ func start_game():
 	background.modulate.a = 0.0
 	start_fade_in(background)
 	radio.start_radio()
-	#dialog = Dialogic.start('Tutorial')
-	dialog = Dialogic.start('Ending')
+	dialog = Dialogic.start('Tutorial')
 	call_deferred("add_child",dialog)
 	
 	

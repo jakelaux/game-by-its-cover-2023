@@ -832,7 +832,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[shake rate=20.0 level=5 connected=1]This is your chance [player_name]\n[/shake]"
+			"text": "[shake rate=20.0 level=5 connected=1]This is your chance [player_name][/shake]"
 		},
 		{
 			"character": "",
@@ -1052,13 +1052,13 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[shake rate=20.0 level=5 connected=1]You walk up to Becky and rip the name tag from her shirt…[/shake]"
+			"text": "[shake rate=20.0 level=5 connected=1]*You walk up to Becky and rip the name tag from her shirt*[/shake]"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[shake rate=20.0 level=5 connected=1]You flick the lighter, drop it on the counter. [/shake]"
+			"text": "[shake rate=20.0 level=5 connected=1]*You flick the lighter, drop it on the counter.* [/shake]"
 		},
 		{
 			"event_id": "dialogic_024",
@@ -1085,6 +1085,36 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "[shake rate=20.0 level=5 connected=1]You hear the old Becky rush to the back room [/shake]"
+		},
+		{
+			"animation": "4-fade_out.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
 		},
 		{
 			"audio": "play",
@@ -1171,16 +1201,6 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "You smile and say  “I am Becky”..."
-		},
-		{
-			"call_node": {
-				"arguments": [
-
-				],
-				"method_name": "end_intrusive_thought",
-				"target_node_path": "/root/World"
-			},
-			"event_id": "dialogic_042"
 		},
 		{
 			"call_node": {

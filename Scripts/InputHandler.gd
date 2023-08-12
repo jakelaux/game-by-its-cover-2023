@@ -22,6 +22,5 @@ func _on_Yes_pressed():
 	call_deferred("queue_free")
 
 func _on_No_pressed():
-	print("no it's not right")
 	validation.visible = false
 	user_input.visible = true
