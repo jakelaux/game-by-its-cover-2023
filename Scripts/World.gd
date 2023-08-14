@@ -29,6 +29,11 @@ onready var intrusive_music		= $GameMusicManager/IntrusiveMusic
 onready var ending_music_fire	= $GameMusicManager/EndingMusicFire
 onready var ending_music		= $GameMusicManager/EndingMusic
 onready var game_ambient_music	= $GameMusicManager/GameAmbientMusic
+onready var title				= $AnimationPlayer
+onready var title_off			= $AnimationPlayer/off
+onready var title_on			= $AnimationPlayer/on
+onready var game_comp			= $AnimationPlayer/gamecomp
+onready var ending_animation	= $Background/AnimationPlayer
 
 const user_input_scene	= preload("res://Scenes/Utility/userInput.tscn")
 
@@ -52,10 +57,14 @@ func _ready():
 	game_ambient_music.play()
 	menu_screen.connect("start_game", self, "start_game")
 	menu_screen.connect("play_again", self, "play_again")
-
+	title.play("FlickerOn")
+	
 func start_game():
 	menu_camera.current = false
 	menu_camera.visible = false
+	title_off.visible = false
+	title_on.visible = false
+	game_comp.visible = false
 	camera.current = true
 	camera.visible = true
 	menu_screen.visible = false
@@ -64,7 +73,6 @@ func start_game():
 	radio.start_radio()
 	dialog = Dialogic.start('Tutorial')
 	call_deferred("add_child",dialog)
-	
 	
 func call_ending(ending):
 	game_ambient_music.stop()
@@ -75,9 +83,12 @@ func call_ending(ending):
 		ending_music_fire.play()
 		if ending == 'ending1':
 			ending1.visible = true
+			ending_animation.play("Ending1")
 		else:
 			ending2.visible = true
+			ending_animation.play("Ending2")
 	elif ending == 'ending3':
+		ending_animation.play("Ending3")
 		ending3.visible = true
 		ending_music.play()
 	
@@ -87,6 +98,9 @@ func show_back_to_menu():
 	camera.current = false
 	camera.visible = false
 	menu_screen.visible = true
+	title_off.visible = true
+	title_on.visible = true
+	game_comp.visible = true
 	menu.visible = false
 	back_to_menu.visible = true
 	

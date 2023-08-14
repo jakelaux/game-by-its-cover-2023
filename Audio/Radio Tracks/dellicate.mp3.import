@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/dellicate.mp3-948614cf84f17587a7c66d9ee3206895.mp3str"
+
+[deps]
+
+source_file="res://Audio/Radio Tracks/dellicate.mp3"
+dest_files=[ "res://.import/dellicate.mp3-948614cf84f17587a7c66d9ee3206895.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

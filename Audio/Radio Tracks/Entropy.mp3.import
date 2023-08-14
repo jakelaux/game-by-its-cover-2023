@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Entropy.mp3-b717aefb62e984f3a50cf55d348c50e3.mp3str"
+
+[deps]
+
+source_file="res://Audio/Radio Tracks/Entropy.mp3"
+dest_files=[ "res://.import/Entropy.mp3-b717aefb62e984f3a50cf55d348c50e3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

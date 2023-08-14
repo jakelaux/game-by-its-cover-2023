@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scripts/MenuScreen.gd" type="Script" id=1]
 [ext_resource path="res://Resources/MenuScreen.tres" type="Theme" id=2]
+[ext_resource path="res://addons/dialogic/Example Assets/Fonts/DefaultFontui.tres" type="DynamicFont" id=3]
 
 [sub_resource type="StyleBoxFlat" id=2]
 bg_color = Color( 0.152941, 0, 0.133333, 1 )
@@ -24,29 +25,39 @@ anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
 margin_left = 240.0
-margin_top = 90.0
+margin_top = 65.0
 margin_right = -240.0
-margin_bottom = 245.0
+margin_bottom = 268.0
+custom_constants/separation = 10
 
 [node name="StartGame" type="Button" parent="VBoxContainer"]
-margin_right = 600.0
-margin_bottom = 49.0
+margin_left = 125.0
+margin_right = 475.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 350, 70 )
+size_flags_horizontal = 4
 size_flags_vertical = 3
 theme = ExtResource( 2 )
 text = "Start"
 
 [node name="Settings" type="Button" parent="VBoxContainer"]
-margin_top = 53.0
-margin_right = 600.0
-margin_bottom = 102.0
+margin_left = 125.0
+margin_top = 80.0
+margin_right = 475.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 350, 70 )
+size_flags_horizontal = 4
 size_flags_vertical = 3
 theme = ExtResource( 2 )
 text = "Settings"
 
 [node name="Credits" type="Button" parent="VBoxContainer"]
-margin_top = 106.0
-margin_right = 600.0
-margin_bottom = 155.0
+margin_left = 125.0
+margin_top = 160.0
+margin_right = 475.0
+margin_bottom = 230.0
+rect_min_size = Vector2( 350, 70 )
+size_flags_horizontal = 4
 size_flags_vertical = 3
 theme = ExtResource( 2 )
 text = "Credits"
@@ -57,13 +68,17 @@ anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
 margin_left = 240.0
-margin_top = 90.0
+margin_top = 66.0
 margin_right = -240.0
-margin_bottom = 137.0
+margin_bottom = 131.0
+mouse_default_cursor_shape = 2
 
 [node name="PlayAgain" type="Button" parent="VBoxContainer2"]
-margin_right = 600.0
-margin_bottom = 47.0
+margin_left = 125.0
+margin_right = 475.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 350, 70 )
+size_flags_horizontal = 4
 size_flags_vertical = 3
 theme = ExtResource( 2 )
 text = "Return to Menu"
@@ -82,6 +97,7 @@ margin_top = 40.0
 margin_right = 824.0
 margin_bottom = 90.0
 size_flags_vertical = 1
+custom_fonts/font = ExtResource( 3 )
 text = "Credits"
 align = 1
 valign = 1
@@ -92,18 +108,17 @@ margin_top = 98.0
 margin_right = 824.0
 margin_bottom = 468.0
 size_flags_vertical = 1
-text = "Liza Goncharova - Art
+custom_fonts/font = ExtResource( 3 )
+text = "Dev Team
+Jacob Laux - Programming, Sound Design, Music, UI, Game Design, Writing
+Liza Goncharova - Art Direction and Artist
+Winter Keefer - Story, Writing, & Plot
+Shelby Pearson - Artist
 
-Winter Keefer - Story
-
-Jake Laux - Programming, Sound Design, UI, Game Design
-
-Sadé Robinson - Famicase Entry
-
+Assets/Tools/Inspo:
+Sadé Robinson - Famicase Entry / Inspiration
 Josh DeMille, Christian Andrews, & Jake Laux - Background Music
-
 Emi Coppolaemilio - Dialogic
-
 Yui Kinomoto > Glitch Shader"
 align = 1
 valign = 1
@@ -130,10 +145,11 @@ color = Color( 0.0901961, 0, 0.113725, 1 )
 
 [node name="Title" type="Label" parent="Settings"]
 margin_left = 54.0
-margin_top = 40.0
+margin_top = 13.0
 margin_right = 824.0
-margin_bottom = 90.0
+margin_bottom = 63.0
 size_flags_vertical = 1
+custom_fonts/font = ExtResource( 3 )
 text = "Settings"
 align = 1
 valign = 1
@@ -155,65 +171,69 @@ anchor_left = 0.2
 anchor_top = 0.2
 anchor_right = 0.8
 anchor_bottom = 0.8
+margin_top = -20.0
+margin_bottom = 58.0
 
 [node name="MasterLabel" type="Label" parent="Settings/VBoxContainer"]
 margin_right = 528.0
-margin_bottom = 48.0
-text = "
-
-Master Audio"
+margin_bottom = 28.0
+custom_fonts/font = ExtResource( 3 )
+text = "Master Audio"
 
 [node name="MasterAudio" type="HSlider" parent="Settings/VBoxContainer"]
-margin_top = 52.0
+margin_top = 32.0
 margin_right = 528.0
-margin_bottom = 68.0
+margin_bottom = 48.0
 min_value = -30.0
 max_value = 0.0
 
 [node name="SFXLabel" type="Label" parent="Settings/VBoxContainer"]
-margin_top = 72.0
+margin_top = 52.0
 margin_right = 528.0
-margin_bottom = 120.0
+margin_bottom = 142.0
+custom_fonts/font = ExtResource( 3 )
 text = "
 
 Sound Effects"
 
 [node name="SoundEffects" type="HSlider" parent="Settings/VBoxContainer"]
-margin_top = 124.0
+margin_top = 146.0
 margin_right = 528.0
-margin_bottom = 140.0
+margin_bottom = 162.0
 min_value = -30.0
 max_value = 0.0
 value = -4.0
 
 [node name="Music" type="Label" parent="Settings/VBoxContainer"]
-margin_top = 144.0
+margin_top = 166.0
 margin_right = 528.0
-margin_bottom = 192.0
+margin_bottom = 256.0
+custom_fonts/font = ExtResource( 3 )
 text = "
 
 Music"
 
 [node name="GameMusic" type="HSlider" parent="Settings/VBoxContainer"]
-margin_top = 196.0
+margin_top = 260.0
 margin_right = 528.0
-margin_bottom = 212.0
+margin_bottom = 276.0
 min_value = -30.0
 max_value = 0.0
 value = -3.0
 
 [node name="StoreRadioLabel" type="Label" parent="Settings/VBoxContainer"]
-margin_top = 216.0
+margin_top = 280.0
 margin_right = 528.0
-margin_bottom = 264.0
+margin_bottom = 370.0
+custom_fonts/font = ExtResource( 3 )
 text = "
 
 Store Radio / Background Music"
 
 [node name="StoreRadio" type="HSlider" parent="Settings/VBoxContainer"]
-margin_top = 268.0
+margin_top = 374.0
 margin_right = 528.0
-margin_bottom = 284.0
+margin_bottom = 390.0
 min_value = -30.0
 max_value = 0.0
 value = -10.0

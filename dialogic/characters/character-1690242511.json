@@ -4,18 +4,18 @@
 	"display_name": "Customer",
 	"display_name_bool": true,
 	"id": "character-1690242511.json",
-	"mirror_portraits": true,
+	"mirror_portraits": false,
 	"name": "TimeTraveler",
 	"nickname": "",
 	"nickname_bool": false,
 	"offset_x": 0,
-	"offset_y": -150,
+	"offset_y": -50,
 	"portraits": [
 		{
 			"name": "Default",
-			"path": "res://Assets/Portraits/Traveler.png"
+			"path": "res://Assets/Portraits/Traveler_v02.png"
 		}
 	],
-	"scale": 30,
+	"scale": 28,
 	"theme": "theme-1689644577.cfg"
 }

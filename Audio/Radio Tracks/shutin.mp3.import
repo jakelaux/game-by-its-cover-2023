@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/shutin.mp3-f1fea54a212e0eab9199d14daef2ab61.mp3str"
+
+[deps]
+
+source_file="res://Audio/Radio Tracks/shutin.mp3"
+dest_files=[ "res://.import/shutin.mp3-f1fea54a212e0eab9199d14daef2ab61.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

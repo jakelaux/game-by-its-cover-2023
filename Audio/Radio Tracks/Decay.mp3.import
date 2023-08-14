@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Decay.mp3-dbc6cb4fbe657dcc55f7ecc3e80ac330.mp3str"
+
+[deps]
+
+source_file="res://Audio/Radio Tracks/Decay.mp3"
+dest_files=[ "res://.import/Decay.mp3-dbc6cb4fbe657dcc55f7ecc3e80ac330.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

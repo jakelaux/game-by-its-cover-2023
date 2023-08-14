@@ -13,7 +13,7 @@ func _on_waitForFade_timeout():
 func _on_input_text_entered(new_text):
 	user_input.visible = false
 	validation.visible = true
-	label.text = "is " + new_text + " correct?"
+	label.text = "Is " + new_text + " correct?"
 	
 func _on_Yes_pressed():
 	validation.visible = false

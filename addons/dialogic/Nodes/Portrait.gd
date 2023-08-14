@@ -34,7 +34,7 @@ func _ready():
 	$AnimationTween.connect('finished_animation', self, 'emit_signal', ['animation_finished'])
 	original_position = $TextureRect.rect_position
 
-func _process(delta):
+func _process(_delta):
 	move_with_sway()
 
 func set_portrait(expression: String) -> void:
@@ -162,7 +162,7 @@ func animate(animation_name = '[No Animation]', time = 1, loop = 1, delete = fal
 		if custom_instance != null:
 			custom_instance.modulate.a = 0
 		else:
-			$TextureRect.modulate = Color(1,1,1,0)
+			$TextureRect.modulate = Color(1.3,1.25,1.3,0)
 		
 	
 	$AnimationTween.loop = loop
@@ -178,7 +178,7 @@ func animate(animation_name = '[No Animation]', time = 1, loop = 1, delete = fal
 
 func focus():
 	if not fading_out:
-		tween_modulate(modulate, Color(1,1,1, 1))
+		tween_modulate(modulate, Color(1.3,1.25,1.3, 1))
 
 
 func focusout(dim_color = Color(0.5, 0.5, 0.5, 1.0)):
@@ -211,5 +211,5 @@ func get_mirror_scale(current_scale:float, mirror_value:bool) -> int:
 
 func move_with_sway():
 	var world  = get_node("/root/World")
-	var offset = (world.get_shake_offset() / 40)
+	var offset = (world.get_shake_offset() / 40)	
 	$TextureRect.rect_position += offset

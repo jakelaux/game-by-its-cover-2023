@@ -23,8 +23,10 @@ func _ready():
 	bumps = [bump1,bump2,bump3,bump4,bump5]
 	songs.shuffle()
 	bumps.shuffle()
+	
 func start_radio():
 	songs[audio_index].play()
+	
 func to_bump():
 	audio_index += 1
 	if audio_index >= bumps.size():

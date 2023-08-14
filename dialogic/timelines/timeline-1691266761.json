@@ -589,7 +589,7 @@
 		},
 		{
 			"event_id": "dialogic_024",
-			"set_theme": "theme-1690342652.cfg"
+			"set_theme": "theme-1689445223.cfg"
 		},
 		{
 			"character": "character-1690745174.json",
@@ -609,7 +609,7 @@
 		},
 		{
 			"event_id": "dialogic_024",
-			"set_theme": "theme-1690342652.cfg"
+			"set_theme": "theme-1689445223.cfg"
 		},
 		{
 			"character": "character-1690745174.json",
@@ -755,11 +755,6 @@
 			"z_index": 0
 		},
 		{
-			"event_id": "dialogic_023",
-			"hide_dialogbox": true,
-			"wait_seconds": 2
-		},
-		{
 			"call_node": {
 				"arguments": [
 					"ending1"
@@ -768,6 +763,11 @@
 				"target_node_path": "/root/World"
 			},
 			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 2
 		},
 		{
 			"event_id": "dialogic_024",

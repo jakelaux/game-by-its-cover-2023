@@ -9,13 +9,13 @@
 	"nickname": "",
 	"nickname_bool": false,
 	"offset_x": 0,
-	"offset_y": -150,
+	"offset_y": -50,
 	"portraits": [
 		{
 			"name": "Default",
-			"path": "res://Assets/Portraits/Gossip.png"
+			"path": "res://Assets/Portraits/Gossip_v02.png"
 		}
 	],
-	"scale": 30,
+	"scale": 28,
 	"theme": "theme-1689644577.cfg"
 }
