@@ -1,0 +1,1315 @@
+{
+	"events": [
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Audio/sfx/enter_store_w_steps.wav",
+			"volume": 0
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1696792122.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"character": "character-1696792122.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Je peux avoir la clé des toilettes  ?"
+		},
+		{
+			"choice": "Euh... Bien sûr...",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "damage_sanity",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]C'est quoi son problème, à ce type ?[/shake]"
+		},
+		{
+			"condition": "",
+			"definition": "1690244779-516",
+			"event_id": "dialogic_012",
+			"value": "yes"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Il vient tout juste d'aller aux toilettes.[/shake]"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1690244779-516",
+			"event_id": "dialogic_012",
+			"value": "no"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Tu lui as déjà dit qu'il ne pouvait pas utiliser les toilettes il y a moins d'une demi-heure...[/shake]"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "[shake rate=20.0 level=5 connected=1]Qu'est-ce qu'il fabrique là-dedans ?[/shake]"
+		},
+		{
+			"choice": "Il construit une machine à remonter le temps.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Il doit voler du papier toilette. ",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Je crois qu'il essaie de mettre le feu à la boutique.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Audio/sfx/enter_store_w_steps.wav",
+			"volume": 0
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Tu ne peux pas le laisser s'en sortir comme ça.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Becky. Elle te surveille... te juge... en permanence... Rien de ce que tu fais n'est jamais assez bien, pas vrai ?[/shake]"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"condition": "",
+			"definition": "1690501993-133",
+			"event_id": "dialogic_012",
+			"value": "true"
+		},
+		{
+			"character": "character-1696792122.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Alors... ? Je peux avoir la clé ?"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nan, vous l'avez cassée la dernière fois que vous y êtes allé."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"character": "character-1696792122.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ouais. Parce que quelqu'un a enfoncé la porte pendant que j'étais en train de chier. "
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1690501993-133",
+			"event_id": "dialogic_012",
+			"value": "false"
+		},
+		{
+			"character": "character-1696792122.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Alors... ? Je peux avoir la clé ?"
+		},
+		{
+			"choice": "Non. Votre petit manège s'arrête ici. (Avaler la clé)",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1696792122.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Vous êtes dingue ? "
+		},
+		{
+			"choice": "Regardez, derrière vous ! (Lancer la clé discrètement) Zut, j'ai perdu la clé...",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "J'ai vu ce que t'as fait. C'est quoi l'idée, tu veux qu'il se pisse dessus ?"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Becky s'éloigne rapidement vers le fond de la boutique, ramasse la clé et revient près du comptoir. "
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1696792122.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ça suffit. C'est décidé, maintenant, j'irai plus qu'au Speedy Trip de l'autre côté de l'Interstate 10. En plus, je préfère leur PQ. Une seule épaisseur, c'est pas assez."
+		},
+		{
+			"animation": "4-fade_out.gd",
+			"animation_length": 1,
+			"animation_wait": false,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1696792122.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Audio/sfx/leave_store_w_steps.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Je... C'était quoi, ce bordel ? Reprends-toi. Si la boutique reçoit encore de mauvais avis, ton père va me sucrer ma paie."
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "C'est un vrai connard, tu sais ? "
+		},
+		{
+			"choice": "Tu crois me connaître parce que tu le connais, lui, pas vrai ? Tu te plantes.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Au moins, toi, t'as pas à vivre avec lui. ",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Je sais. Tu peux me croire, je le sais. ",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Écoute, [player_name]. Maintenant que je bosse pour lui, je sais comment il est quand il est en colère. Je veux dire... Est-ce que tu...   "
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1696792119.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Audio/sfx/enter_store_w_steps.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1696792119.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "C'est quoi ce bordel, vous m'avez piqué ma carte bancaire ?!"
+		},
+		{
+			"choice": "Euh, non, j'ai seulement votre carte de tarot... [tarot_card]",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1696792119.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Montrez-la-moi !"
+		},
+		{
+			"choice": "Non.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Montre-lui la carte, [player_name]."
+		},
+		{
+			"choice": "OK...",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "D'accord...",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Très bien...",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "damage_sanity",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Je n'arrive pas à croire que Becky prenne sa défense.[/shake]"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "À contrecœur, vous lui montrez la carte de tarot."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"character": "character-1696792119.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "C'est ma carte, espèce d'ordure !"
+		},
+		{
+			"choice": "OK.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1696792119.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "C'est ma carte ! Rendez-la-moi ! Vous êtes malade ?!"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Merde, [player_name]... Rends-lui sa carte."
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Toutes mes excuses, madame, j'ignore ce qui lui a pris..."
+		},
+		{
+			"choice": "Hein ? Non... Pourquoi j'aurais fait ça ?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Est-ce que tu as quoi que ce soit qu'elle aurait pu oublier en partant ?"
+		},
+		{
+			"choice": "J'ai cette carte de tarot.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tu déconnes, j'espère ? C'est sa carte bancaire, ça."
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "damage_sanity",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Becky doit être folle, c'est clairement la carte de tarot qu'elle t'a OFFERTE... Tu ferais une meilleure Becky qu'elle ne le sera jamais.[/shake]"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Becky vous arrache la carte des mains et la tend à la femme."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Non mais ça va pas, [player_name] ?\n\nMes excuses, madame, je ne sais pas ce qui lui a pris..."
+		},
+		{
+			"choice": "Vous essayez de me ridiculiser devant Becky ?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Qu'est-ce que tu racontes, [player_name] ? Je crois que tu n'as pas besoin d'elle pour te ridiculiser..."
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Est-ce que tu lui as pris quelque chose ?"
+		},
+		{
+			"choice": "J'ai cette carte de tarot...",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tu déconnes, j'espère ? C'est sa carte bancaire, ça."
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "T'es vraiment un cas désespéré, tu sais ? C'est pour ça que ton père m'a confié les rênes \nde cet endroit... Pour te garder à l'œil."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Becky vous arrache la carte des mains et la tend à la femme."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Toutes mes excuses, madame, j'ignore ce qui lui a pris..."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1696792119.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Je ne sais pas quel genre de business vous tenez, ici... Vous avez intérêt à ne pas avoir utilisé ma carte."
+		},
+		{
+			"character": "character-1696792119.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Je crois que j'irai au Speedy Trip, à partir de maintenant."
+		},
+		{
+			"animation": "4-fade_out.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1696792119.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Audio/sfx/leave_store_w_steps.wav",
+			"volume": 0
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 2
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Audio/sfx/enter_store_w_steps.wav",
+			"volume": 0
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"condition": "",
+			"definition": "1691259315-648",
+			"event_id": "dialogic_012",
+			"value": "yes"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Alors, ça fait quoi de bosser pour une voleuse de petit copain ?"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Quoi ?! Vous avez parlé de moi ? Tu sais bien que ça ne s'est pas passé comme ça.  \nTu ne crois tout de même pas à ces conneries ?"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "damage_sanity",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Becky cherche toujours à déformer la vérité pour rejeter la faute sur les autres. Elle veut te faire croire que tu es dingue... mais tu connais la vérité.[/shake]"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Qu'est-ce qui se passe ici... ?"
+		},
+		{
+			"choice": "J'ai toujours su que tu cachais quelque chose.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Écoute, je ne suis pas parfaite, mais tout ça, ça ne te regarde pas. Pourquoi ça t'intéresse, hein ?"
+		},
+		{
+			"choice": "Parce que je suis toi. ",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Parce que je t'aime. ",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Parce que je n'ai rien de mieux à faire. ",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "On ne parle pas de toi. On parle de moi. Je suis Becky. Tu es [player_name].",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tu te crois tellement parfaite, pas vrai ? Si cool... Si imperturbable..."
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Mais ce n'est qu'une façade pour obtenir tout ce que tu prétends ne pas vouloir..."
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "[player_name], toi aussi, Becky te traite comme une merde... Non ? "
+		},
+		{
+			"choice": "Ouais, elle me refile toujours les tâches les plus pourries.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1691360721-366",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "yes"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Eh ben merci, [player_name]... Moi qui pensais qu'on avait noué un semblant d'amitié..."
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "D'accord, c'est moi qui gère le planning, mais on a quand même eu des conversations assez profondes..."
+		},
+		{
+			"choice": "Non. C'est ma manager, mais elle n'est pas comme tu la décris.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1691360721-366",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "no"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Merci, [player_name]."
+		},
+		{
+			"choice": "Je suis Becky.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1691360721-366",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "neutral"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ça va pas ? C'est moi, Becky. Toi, c'est [player_name]... Je crois que les vapeurs d'essence te montent au cerveau."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Je... Que... Qu'est-ce qui cloche chez toi ? J'ai besoin de prendre l'air."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Audio/sfx/leave_store_w_steps.wav",
+			"volume": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1691259315-648",
+			"event_id": "dialogic_012",
+			"value": "no"
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh... Salut, Becky..."
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Salope..."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Becky croise les bras."
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Pardon ?!"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "damage_sanity",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "[shake rate=20.0 level=5 connected=1]J'espère qu'elles vont se battre.[/shake]"
+		},
+		{
+			"choice": "Pourquoi ça t'intéresse à ce point ? ",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "J'espère aussi. ",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tu te crois tellement parfaite, pas vrai ? Si cool... Si imperturbable... Comme si t'étais différente et fière de l'être..."
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Mais ce n'est qu'une façade pour obtenir tout ce que tu prétends ne pas vouloir..."
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Mon petit copain croit qu'il est amoureux de toi. Je suis en train de TOUT perdre. T'as même convaincu le père de cette andouille de te nommer manager... "
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Est-ce que t'as déjà eu le moindre problème dans ta vie ?! "
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "[player_name], toi aussi, Becky te traite comme une merde... non ?"
+		},
+		{
+			"choice": "Ouais, elle me refile toujours les tâches les plus pourries.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1691360721-366",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "yes"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Eh ben merci, [player_name]... Moi qui pensais qu'on avait noué un semblant d'amitié..."
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "D'accord, c'est moi qui gère le planning, mais on a quand même eu des conversations assez profondes..."
+		},
+		{
+			"choice": "Non. C'est ma manager, mais elle n'est pas comme tu la décris.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1691360721-366",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "no"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Merci, [player_name]."
+		},
+		{
+			"choice": "Je suis Becky.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1691360721-366",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "neutral"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ça va pas ? C'est moi, Becky. Toi, c'est [player_name]... Je crois que les vapeurs d'essence te montent au cerveau..."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Et donc... Tu me détestes à cause de Dennis ?! Il ne m'intéresse pas du tout..."
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "VRAIMENT ?! "
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Je ne pense pas du tout à lui en ces termes. Je suis lesbienne. Tu ne le savais pas ?"
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Il ne m'intéresse absolument pas."
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Mais, tu... Tu... Euh... Je dois y aller."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Audio/sfx/leave_store_w_steps.wav",
+			"volume": 0
+		},
+		{
+			"animation": "4-fade_out.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ouah. La vache. C'était quoi, ça ? Je... J'ai besoin de prendre l'air."
+		},
+		{
+			"animation": "4-fade_out.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1690745174.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"change_timeline": "timeline-1696717158.json",
+			"event_id": "dialogic_020"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1696717151.json",
+		"name": "fullCast_fr"
+	}
+}

@@ -1,0 +1,297 @@
+{
+	"events": [
+		{
+			"audio": "play",
+			"audio_bus": "SFX",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Audio/sfx/enter_store_w_steps.wav",
+			"volume": -5.05
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1696792119.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"character": "character-1696792119.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Dites, je crois que j'ai perdu quelque chose la dernière fois que je suis venue."
+		},
+		{
+			"character": "character-1696792119.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Vous pourriez vérifier dans les objets trouvés ?"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Vous fouillez un tiroir sous le comptoir, y trouvez un paquet de cartes de tarot et le tendez à la femme."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"character": "character-1696792119.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ah ! Je crois que c'est à moi !"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Elle vous arrache habilement le paquet des mains.[/shake]"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "damage_sanity",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Trois cartes tombent sur le comptoir."
+		},
+		{
+			"choice": "La Justice",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=30.0 level=5 connected=1]Ton sort est scellé. La Justice y veillera ![/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=30.0 level=5 connected=1]Telle une épée, elle tranchera tes problèmes sans transiger, et justes seront ses choix.[/shake]"
+		},
+		{
+			"definition": "1690238927-374",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "Justice"
+		},
+		{
+			"choice": "Le Pendu",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=30.0 level=5 connected=1]Tu ne penses jamais qu'à toi. Tu n'es jamais disponible pour remplacer tes collègues au pied levé. Tu t'imagines que Becky ne l'a pas remarqué ?[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=30.0 level=5 connected=1]Tu as gâché toutes tes chances d'illumination et ta vie ne sera jamais plus qu'apitoiement et désespoir.[/shake]"
+		},
+		{
+			"definition": "1690238927-374",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "the Hanged Man"
+		},
+		{
+			"choice": "L'Ermite",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=30.0 level=5 connected=1]Tout ce temps passé à travailler derrière ce comptoir, sans aucune compagnie. Tout ce temps à vivre dans la solitude. Une véritable existence d'ermite.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=30.0 level=5 connected=1]Tu la justifies en prétextant une volonté d'introspection... mais tout ce qu'il y a d'intéressant en toi, c'est moi, n'est-ce pas ?[/shake]"
+		},
+		{
+			"definition": "1690238927-374",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "the Hermit"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Vous ramassez la carte de tarot et la glissez dans votre poche."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1690342652.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "AAAAH !"
+		},
+		{
+			"choice": "C'était... flippant.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Passons.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "L'horoscope, ça change tous les jours.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"character": "character-1696792119.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "OK... Eh bien... Merci ? Tout va bien ?!"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1
+		},
+		{
+			"character": "character-1696792119.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Bon, je n'ai pas que ça à faire de mon temps, moi... Bonne nuit."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "SFX",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Audio/sfx/leave_store_w_steps.wav",
+			"volume": -5
+		},
+		{
+			"animation": "4-fade_out.gd",
+			"animation_length": 1,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1696792119.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"change_timeline": "timeline-1696717136.json",
+			"event_id": "dialogic_020"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1696717101.json",
+		"name": "psychicIntro_fr"
+	}
+}

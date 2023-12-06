@@ -8,14 +8,17 @@
 				"character-1690237009.json",
 				"character-1690242511.json",
 				"character-1690745163.json",
-				"character-1690745174.json"
+				"character-1690745174.json",
+				"character-1696792119.json",
+				"character-1696792121.json",
+				"character-1696792122.json"
 			],
 			"folders": {
 
 			},
 			"metadata": {
 				"color": null,
-				"folded": false
+				"folded": true
 			}
 		},
 		"Definitions": {
@@ -62,19 +65,21 @@
 			"folders": {
 				"Becky": {
 					"files": [
-						"timeline-1691266761.json"
+						"timeline-1691266761.json",
+						"timeline-1696717121.json"
 					],
 					"folders": {
 
 					},
 					"metadata": {
 						"color": null,
-						"folded": true
+						"folded": false
 					}
 				},
 				"Gossip": {
 					"files": [
-						"timeline-1690744992.json"
+						"timeline-1690744992.json",
+						"timeline-1696717112.json"
 					],
 					"folders": {
 
@@ -90,7 +95,12 @@
 						"timeline-1690245176.json~RF1b22d20c.TMP",
 						"timeline-1691256973.json",
 						"timeline-1691259468.json",
-						"timeline-1691266715.json"
+						"timeline-1691266715.json",
+						"timeline-1696717128.json",
+						"timeline-1696717136.json",
+						"timeline-1696717145.json",
+						"timeline-1696717151.json",
+						"timeline-1696717158.json"
 					],
 					"folders": {
 
@@ -102,7 +112,8 @@
 				},
 				"Psychic": {
 					"files": [
-						"timeline-1690236989.json"
+						"timeline-1690236989.json",
+						"timeline-1696717101.json"
 					],
 					"folders": {
 
@@ -114,20 +125,23 @@
 				},
 				"Time Traveler": {
 					"files": [
-						"timeline-1690242485.json"
+						"timeline-1690242485.json",
+						"timeline-1696717091.json"
 					],
 					"folders": {
 
 					},
 					"metadata": {
 						"color": null,
-						"folded": true
+						"folded": false
 					}
 				},
 				"Tutorial": {
 					"files": [
 						"timeline-1688687242.json",
-						"timeline-1688696046.json"
+						"timeline-1688696046.json",
+						"timeline-1696716838.json",
+						"timeline-1696716846.json"
 					],
 					"folders": {
 

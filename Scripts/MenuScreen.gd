@@ -2,9 +2,12 @@ extends Control
 
 signal start_game
 signal play_again
+signal update_language
+
+signal debugging
 
 onready var credits  = $Credits
-onready var settings = $Settings 
+onready var settings = $Settings
 
 var master_bus = AudioServer.get_bus_index("Master")
 var sfx_bus	   = AudioServer.get_bus_index("SFX")
@@ -17,6 +20,9 @@ func handle_audio_bus_change(bus,value):
 		AudioServer.set_bus_mute(bus,true)
 	else:
 		AudioServer.set_bus_mute(bus,false)
+
+func _ready():
+	$DebugLinkToScenes.connect("debugging", self, "debug_mode")
 
 func _on_StartGame_pressed():
 	emit_signal("start_game")
@@ -47,3 +53,12 @@ func _on_GameMusic_value_changed(value):
 
 func _on_PlayAgain_pressed():
 	emit_signal("play_again")
+	
+func _on_Language_pressed():
+	emit_signal('update_language')
+
+func _on_Debug_Mode_pressed():
+	$DebugLinkToScenes.visible = true
+
+func debug_mode(scene):
+	emit_signal('debugging',scene)

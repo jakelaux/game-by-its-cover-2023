@@ -1,0 +1,141 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Resources/MenuScreen.tres" type="Theme" id=1]
+[ext_resource path="res://Scripts/debugMode.gd" type="Script" id=2]
+
+[node name="DebugLinkToScenes" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="GridContainer" type="GridContainer" parent="."]
+margin_left = 11.0
+margin_top = 15.0
+margin_right = 1074.0
+margin_bottom = 704.0
+grow_horizontal = 0
+columns = 3
+
+[node name="tutorial" type="Button" parent="GridContainer"]
+margin_right = 350.0
+margin_bottom = 170.0
+rect_min_size = Vector2( 350, 70 )
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+text = "Tutorial"
+
+[node name="tutorialPt2" type="Button" parent="GridContainer"]
+margin_left = 354.0
+margin_right = 704.0
+margin_bottom = 170.0
+rect_min_size = Vector2( 350, 70 )
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+text = "Tutorial Pt.2"
+
+[node name="psychicIntro" type="Button" parent="GridContainer"]
+margin_left = 708.0
+margin_right = 1058.0
+margin_bottom = 170.0
+rect_min_size = Vector2( 350, 70 )
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+text = "Psychic"
+
+[node name="intrusive0" type="Button" parent="GridContainer"]
+margin_top = 174.0
+margin_right = 350.0
+margin_bottom = 343.0
+rect_min_size = Vector2( 350, 70 )
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+text = "Intrusive 0"
+
+[node name="timeTravelerIntro" type="Button" parent="GridContainer"]
+margin_left = 354.0
+margin_top = 174.0
+margin_right = 704.0
+margin_bottom = 343.0
+rect_min_size = Vector2( 350, 70 )
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+text = "Time Traveler"
+
+[node name="intrusive1" type="Button" parent="GridContainer"]
+margin_left = 708.0
+margin_top = 174.0
+margin_right = 1058.0
+margin_bottom = 343.0
+rect_min_size = Vector2( 350, 70 )
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+text = "Intrusive 1"
+
+[node name="Gossip" type="Button" parent="GridContainer"]
+margin_top = 347.0
+margin_right = 350.0
+margin_bottom = 516.0
+rect_min_size = Vector2( 350, 70 )
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+text = "Gossip"
+
+[node name="intrusive2" type="Button" parent="GridContainer"]
+margin_left = 354.0
+margin_top = 347.0
+margin_right = 704.0
+margin_bottom = 516.0
+rect_min_size = Vector2( 350, 70 )
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+text = "Intrusive 2"
+
+[node name="fullCast" type="Button" parent="GridContainer"]
+margin_left = 708.0
+margin_top = 347.0
+margin_right = 1058.0
+margin_bottom = 516.0
+rect_min_size = Vector2( 350, 70 )
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+text = "Full Cast"
+
+[node name="Intrusive3" type="Button" parent="GridContainer"]
+margin_top = 520.0
+margin_right = 350.0
+margin_bottom = 689.0
+rect_min_size = Vector2( 350, 70 )
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+text = "Intrusive 3"
+
+[node name="Ending" type="Button" parent="GridContainer"]
+margin_left = 354.0
+margin_top = 520.0
+margin_right = 704.0
+margin_bottom = 689.0
+rect_min_size = Vector2( 350, 70 )
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+text = "Ending"
+
+[connection signal="pressed" from="GridContainer/tutorial" to="." method="_on_tutorial_pressed"]
+[connection signal="pressed" from="GridContainer/tutorialPt2" to="." method="_on_tutorialPt2_pressed"]
+[connection signal="pressed" from="GridContainer/psychicIntro" to="." method="_on_psychicIntro_pressed"]
+[connection signal="pressed" from="GridContainer/intrusive0" to="." method="_on_intrusive0_pressed"]
+[connection signal="pressed" from="GridContainer/timeTravelerIntro" to="." method="_on_timeTravelerIntro_pressed"]
+[connection signal="pressed" from="GridContainer/intrusive1" to="." method="_on_intrusive1_pressed"]
+[connection signal="pressed" from="GridContainer/Gossip" to="." method="_on_Gossip_pressed"]
+[connection signal="pressed" from="GridContainer/intrusive2" to="." method="_on_intrusive2_pressed"]
+[connection signal="pressed" from="GridContainer/fullCast" to="." method="_on_fullCast_pressed"]
+[connection signal="pressed" from="GridContainer/Intrusive3" to="." method="_on_Intrusive3_pressed"]
+[connection signal="pressed" from="GridContainer/Ending" to="." method="_on_Ending_pressed"]

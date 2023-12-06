@@ -1,0 +1,76 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Je déteste ce boulot..."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Les nuits sont interminables, et tout le monde a l'air de vouloir discuter jusqu'à ce que je meure d'ennui..."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tout ce que j'ai pour me distraire, c'est mon portable et la voix dans ma tête."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "J'arrive pas à croire que Becky m'a refilé le service de nuit... Enfin, j'ai pas mon mot à dire, vu que c'est elle qui gère le planning..."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Et puis... c'est pas comme si je pouvais trouver autre chose dans ce trou à rats. Autant m'y habituer."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sans mon père, j'aurais jamais eu le poste... mais il m'a quand même préféré Becky pour tenir la boutique. "
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Pff..."
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 2
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Je suis au bout du rouleau, c'est à peine si je me souviens de comment je m'appelle... C'est quoi, mon nom, déjà ?"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "player_name_capture",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1696716838.json",
+		"name": "Tutorial_fr"
+	}
+}

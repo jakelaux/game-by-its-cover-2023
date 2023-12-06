@@ -1,0 +1,566 @@
+{
+	"events": [
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "damage_sanity",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Tu fatigues ? Je vois tes paupières lutter contre la gravité.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "[shake rate=20.0 level=5 connected=1]Ça te fait quoi de savoir que c'est Becky qui gère le planning ?[/shake]"
+		},
+		{
+			"choice": "Je ne pense pas à Becky... pas trop. Eh ben...",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]C'est ça. Continue de te mentir à toi-même.[/shake]"
+		},
+		{
+			"choice": "Elle contrôle tout. Rien de ce que je fais n'a d'importance.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Tu devrais être manager. Tu devrais gérer le planning. Mais Becky est un obstacle.[/shake]"
+		},
+		{
+			"choice": "Je suis Becky.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Oui. Je suis Becky.[/shake]"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Audio/sfx/enter_store_w_steps.wav",
+			"volume": 0
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Un paquet de Pall Mall mentholées. Merci."
+		},
+		{
+			"choice": "Elle se souvient sans doute de toi à l'école. Au moins de cette fois-là...",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Impossible que Kelly sache que tu existes.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[player_name], c'est ça ? L'incendiaire..."
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "T'avais mis le feu aux gradins du vieux collège abandonné..."
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tout le monde pensait à un incendie criminel, mais à la vidéosurveillance, ils n'ont vu que toi qui jouais avec des feux d'artifice..."
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "C'est plutôt déprimant, à vrai dire..."
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Pourquoi tu t'isolais toujours ? "
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Est-ce que tu as des amis ?"
+		},
+		{
+			"choice": "Un seul, j'imagine...",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "damage_sanity",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Oh, tu parles de moi, là, pas vrai ? Tu t'imagines que je suis ton ami... C'est d'une tristesse...[/shake]"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"choice": "Je, euh... Je travaille trop pour avoir des amis. Ouais, c'est aussi simple que ça.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "damage_sanity",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Oui. Tu travailles si dur.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Si seulement Becky arrêtait de te faire travailler de nuit.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Alors, tu aurais des amis.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Après tout, aucune chance que le problème puisse venir de toi...[/shake]"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1689644577.cfg"
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Hmm, OK. T'es bizarre. Mais tu travailles pour Becky, pas vrai ?"
+		},
+		{
+			"choice": "Je suis Becky.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Pas du tout. Je la connais. Toi, c'est [player_name]."
+		},
+		{
+			"choice": "Ouais. Becky gère le planning. C'est de sa faute si je passe mes nuits à bosser. ",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Pff, tu parles d'une cheffe ! On pourrait croire qu'elle prendrait sa part de nuits, si elle avait un minimum d'empathie."
+		},
+		{
+			"choice": "Becky travaille pour moi. Je suis à la tête de cette institution.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hmm, mouais, si tu le dis. Tu travailles dans une station-service. Rien de très impressionnant. "
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Enfin... Bon, je vais être honnête avec toi... Becky, je l'aime pas. "
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Qu'est-ce que tu penses d'elle ? C'est ta collègue, après tout, tu dois bien avoir un avis."
+		},
+		{
+			"choice": "Je suis Becky.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Euh... OK. Faut croire que t'es aussi bizarre que Becky le disait..."
+		},
+		{
+			"choice": "Je hais Becky.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1691259315-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "yes"
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Il y a un truc qui me dérange, chez elle. Je saurais pas dire quoi..."
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 0.3
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Quoique..."
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "C'est comme si elle se croyait au-dessus de tout le monde, mais moi... j'ai vu la vraie Becky."
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Elle se la joue cool et fait comme si rien ne pouvait l'atteindre..."
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Mais c'est qu'une façade. Je l'ai vue, moi, pleurer derrière les gradins du vieux collège..."
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Les gradins auxquels tu as mis le feu, d'ailleurs, maintenant que j'y pense..."
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 0.3
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Bref, c'est une vraie loque, mais elle fait comme si tout allait bien. Comme si rien ni personne n'avait d'importance..."
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Elle se la pète, mais au fond, c'est rien qu'une gamine triste et solitaire qui traîne derrière les gradins. Comme toi. "
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sauf qu'avec Becky, les gens tombent dans le panneau... "
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=40.0 level=5 connected=1]Comme mon abruti de copain qui croit être amoureux d'elle...[/shake]"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 0.5
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Il est batteur dans son groupe à la con, et il dit qu'il aime bien quand elle est méchante avec lui..."
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "C'est stupide. Je la déteste. Je le déteste. Je déteste tout le monde. Tout va bien... "
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Enfin, bref, merci pour les clopes, l'ermite..."
+		},
+		{
+			"choice": "Becky est ma seule amie.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Euh... OK. Faut croire que t'es aussi bizarre que Becky le disait..."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Audio/sfx/leave_store_w_steps.wav",
+			"volume": 0
+		},
+		{
+			"animation": "4-fade_out.gd",
+			"animation_length": 1,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1696792121.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "damage_sanity",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tu vois ? Tu n'as aucune importance pour Becky."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Personne n'a d'importance pour Becky."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Seule Becky a de l'importance pour Becky. "
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"change_timeline": "timeline-1696717145.json",
+			"event_id": "dialogic_020"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1696717112.json",
+		"name": "Gossip1_fr"
+	}
+}

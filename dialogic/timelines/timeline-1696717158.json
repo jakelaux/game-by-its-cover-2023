@@ -1,0 +1,343 @@
+{
+	"events": [
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "damage_sanity",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "[shake rate=20.0 level=5 connected=1]Cette fois, ça y est. Tu as creusé ta propre tombe, il n'y a plus de retour en arrière possible.[/shake]"
+		},
+		{
+			"choice": "Ça suffit. Tu me parles comme si j'avais eu le choix. Je n'ai jamais eu le choix.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Qu'est-ce que j'ai fait ? Qu'est-ce que tu as fait ?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Je... je m'excuse. Je ne voulais pas...",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Ce n'est pas à toi que je parle, [player_name]. Je parle à la personne qui se trouve derrière l'écran.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "[shake rate=20.0 level=5 connected=1]Oui, toi. Tu as déjà développé un jeu vidéo ?[/shake]"
+		},
+		{
+			"choice": "Oui.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1691334545-787",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "yes"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Tu crois que je ne te connais pas ?[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Je te vois... dans une pièce sombre... tu t'acharnes sur un jeu auquel une poignée de gens seulement joueront.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Tu hais ton vrai travail.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Tu rêves de trouver un sens à ta vie.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": " [shake rate=20.0 level=5 connected=1]Tu devrais vraiment aller voir un psy... Vraiment. Va voir un psy.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "[shake rate=20.0 level=5 connected=1]Espèce de sale petite merde.[/shake]"
+		},
+		{
+			"choice": "TES CHOIX N'ONT PAS D'IMPORTANCE.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "TES CHOIX N'ONT PAS D'IMPORTANCE.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "TES CHOIX N'ONT PAS D'IMPORTANCE.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Et maintenant, tu te fais des illusions. Si les choix n'ont pas d'importance, pourquoi Becky a-t-elle tout ce dont elle rêve ?"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "C'est pour ça que je dois devenir elle."
+		},
+		{
+			"choice": "TES CHOIX SONT ARBITRAIRES.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "TES CHOIX N'ONT PAS D'IMPORTANCE.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "TU N'EXISTES PAS TANT QUE PERSONNE NE CLIQUE SUR « NOUVELLE PARTIE ».",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Non.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1691334545-787",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "no"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Oh, tu n'es donc pas de ces idiots qui développent des jeux médiocres sur une plateforme dont personne ou presque ne connaît l'existence ?[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Eh bien, j'imagine que cela fait de toi... quelqu'un qui tient vraiment à ses amis...[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "[shake rate=20.0 level=5 connected=1]Est-ce que soutenir le petit jeu stupide de tes amis t'aide à te sentir mieux ?[/shake]"
+		},
+		{
+			"choice": "CE QUE TU DIS N'A PAS D'IMPORTANCE.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "CE QUE TU FAIS N'A PAS D'IMPORTANCE. ",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "CE QUE TU RESSENS N'A PAS D'IMPORTANCE. ",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]C'est plutôt intrigant, tu ne trouves pas ? Je veux parler de ce pathétique trio en manque de sommeil.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Profitent-ils simplement de leur été entre amis ? Ou bien cherchent-ils désespérément à fuir l'insignifiance de leurs vies, choix, rêves et désirs... ?[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Si désespérément, d'ailleurs, qu'après avoir dépensé tant d'énergie à créer un jeu, c'est à TOI qu'ils proposent d'y jouer. Ha ! C'est plutôt cruel.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Mais alors, pourquoi développer un jeu ?[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Peut-être pensaient-ils réussir, progresser et créer un jour quelque chose d'important. Mais tout le monde sait que Michaelsoft ne le permettra jamais.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Ou peut-être s'imaginaient-ils que faire de l'existence un jeu la rendrait plus supportable ? Mais pour ça, encore faut-il gagner.[/shake] "
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=20.0 level=5 connected=1]Et pour gagner, tes choix doivent avoir de l'importance. Dommage que tu n'aies pas le choix. Mais peut-être que si tu gérais le planning...[/shake]"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=30.0 level=5 connected=1]Puisque rien ne compte... as-tu déjà pensé à réduire cet endroit en cendres ?[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": " [shake rate=30.0 level=5 connected=1]Tu devrais l'envisager.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=30.0 level=5 connected=1]Envisager de tout brûler avec Becky enfermée à l'intérieur.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=30.0 level=5 connected=1]Alors, il n'en resterait plus qu'une.[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=30.0 level=5 connected=1]Il ne resterait plus qu'une Becky...[/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=30.0 level=5 connected=1]Tu sais ce que tu dois faire. Elle arrive.[/shake]"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "end_intrusive_thought",
+				"target_node_path": "/root/World"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"change_timeline": "timeline-1696717121.json",
+			"event_id": "dialogic_020"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1696717158.json",
+		"name": "Intrusive3_fr"
+	}
+}

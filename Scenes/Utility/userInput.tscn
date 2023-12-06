@@ -42,7 +42,7 @@ margin_bottom = 37.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 3 )
 custom_styles/normal = SubResource( 1 )
-max_length = 50
+max_length = 20
 
 [node name="validation" type="VBoxContainer" parent="CanvasLayer"]
 visible = false

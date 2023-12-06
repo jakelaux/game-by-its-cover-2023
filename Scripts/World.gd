@@ -34,6 +34,19 @@ onready var title_off			= $AnimationPlayer/off
 onready var title_on			= $AnimationPlayer/on
 onready var game_comp			= $AnimationPlayer/gamecomp
 onready var ending_animation	= $Background/AnimationPlayer
+#Translated UI Elements
+onready var startButton			= $CanvasLayer2/MenuScreen/VBoxContainer/StartGame
+onready var settingsButton		= $CanvasLayer2/MenuScreen/VBoxContainer/Settings
+onready var creditsButton		= $CanvasLayer2/MenuScreen/VBoxContainer/Credits
+onready var LanguageButton		= $CanvasLayer2/MenuScreen/VBoxContainer/Language
+onready var playAgainButton		= $CanvasLayer2/MenuScreen/VBoxContainer2/PlayAgain
+onready var creditsTitle		= $CanvasLayer2/MenuScreen/Credits/Title
+onready var creditsDetail		= $CanvasLayer2/MenuScreen/Credits/Details
+onready var settingsTitle		= $CanvasLayer2/MenuScreen/Settings/Title
+onready var settingsMaster		= $CanvasLayer2/MenuScreen/Settings/VBoxContainer/MasterLabel
+onready var settingsSFX			= $CanvasLayer2/MenuScreen/Settings/VBoxContainer/SFXLabel
+onready var settingsMusic		= $CanvasLayer2/MenuScreen/Settings/VBoxContainer/Music
+onready var settingsRadio		= $CanvasLayer2/MenuScreen/Settings/VBoxContainer/StoreRadioLabel
 
 const user_input_scene	= preload("res://Scenes/Utility/userInput.tscn")
 
@@ -43,7 +56,58 @@ var shake			= "SWAY"
 var camera_default	= Vector2(0,0)
 var dialog
 var cur_offset		= Vector2(0,0)
+var language		= 'en';
 var playback_pos
+var ui_lang = {}
+
+func update_lang_en():
+	ui_lang.start	 		= 'Start'
+	ui_lang.settings 	 	= 'Settings'
+	ui_lang.play_again 	 	= 'Return to Menu'
+	ui_lang.credits 		= 'Credits'
+	ui_lang.master_audio 	= 'Master Audio'
+	ui_lang.sound_effects 	= 'Sound Effects'
+	ui_lang.music 			= 'Music'
+	ui_lang.store_radio 	= 'Store Radio / Background Music'
+	ui_lang.language		= 'Language: English'
+	ui_lang.credits_title	= 'Credits'
+	ui_lang.credits_text	= 'Dev Team\nJacob Laux - Programming, Sound Design, Music, UI, Game Design, Writing\nLiza Goncharova - Art Direction and Lead Artist \nhttps://www.lizarova.com/ | https://www.instagram.com/lizarova.draws/\nWinter Keefer - Story, Writing, & Plot\nShelby Pearson -  Artist\n\n French Localization\nCyriaque Le Menn - Translation\nLucie Teulières - Proofreading\nSasha Boucheron - LQA \n\nAssets / Tools / Inspo\nSadé Robinson - Famicase Entry / Inspiration\nJosh DeMille, Christian Andrews, & Jake Laux - Background Music\nEmi Coppolaemilio - Dialogic\nYui Kinomoto - Glitch Shader'
+	
+func update_lang_fr():
+	ui_lang.start	 		= 'Commencer'
+	ui_lang.settings 	 	= 'Paramètres'
+	ui_lang.play_again 	 	= 'Retour au menu'
+	ui_lang.credits 		= 'Crédits'
+	ui_lang.master_audio 	= 'Volume principal'
+	ui_lang.sound_effects 	= 'Effets sonores'
+	ui_lang.music 			= 'Musique'
+	ui_lang.store_radio 	= 'Radio du magasin / Fond sonore'
+	ui_lang.language		= 'Langue : Français'
+	ui_lang.credits_title	= 'Crédits:'
+	ui_lang.credits_text	=  'Équipe de développement\nJacob Laux - Programmation, conception sonore, musique, IU, conception du jeu, écriture\nLiza Goncharova - Direction artistique, artiste principale \nhttps://www.lizarova.com/ | https://www.instagram.com/lizarova.draws/\nWinter Keefer - Scénario, écriture et intrigue\nShelby Pearson -  Artiste\n\n Localisation française\nCyriaque Le Menn - Traduction\nLucie Teulières - Relecture\nSasha Boucheron - LQA \n\nAssets / Outils / Inspiration\nSadé Robinson - Inscription Famicase / Inspiration\nJosh DeMille, Christian Andrews, & Jake Laux - Fond sonore\nEmi Coppolaemilio - Dialogic\nYui Kinomoto - Glitch Shader'
+
+func set_lang():
+	startButton.text = ui_lang['start']
+	settingsButton.text = ui_lang['settings']
+	creditsButton.text = ui_lang['credits']
+	LanguageButton.text = ui_lang['language']
+	playAgainButton.text = ui_lang['play_again']
+	creditsTitle.text = ui_lang['credits_title']
+	creditsDetail.text = ui_lang['credits_text']
+	settingsTitle.text = ui_lang['settings']
+	settingsMaster.text = ui_lang['master_audio']
+	settingsSFX.text = ui_lang['sound_effects']
+	settingsMusic.text = ui_lang['music']
+	settingsRadio.text = ui_lang['store_radio']
+
+func handle_lang_change():
+	if language == 'en':
+		language = 'fr'
+		update_lang_fr()
+	elif language == 'fr':
+		language = 'en'
+		update_lang_en()
+	set_lang()
 
 func _ready():
 	rand.randomize()
@@ -55,8 +119,12 @@ func _ready():
 	menu_camera.current = true
 	menu_camera.visible = true
 	game_ambient_music.play()
+	update_lang_en()
+	set_lang()
 	menu_screen.connect("start_game", self, "start_game")
 	menu_screen.connect("play_again", self, "play_again")
+	menu_screen.connect('update_language', self, "handle_lang_change")
+	menu_screen.connect('debugging', self, 'start_game_debug')
 	title.play("FlickerOn")
 	
 func start_game():
@@ -71,7 +139,25 @@ func start_game():
 	background.modulate.a = 0.0
 	start_fade_in(background)
 	radio.start_radio()
-	dialog = Dialogic.start('Tutorial')
+	if language == 'en':
+		dialog = Dialogic.start('Tutorial')
+	elif language == 'fr':
+		dialog = Dialogic.start('Tutorial_fr')
+	call_deferred("add_child",dialog)
+	
+func start_game_debug(scene):
+	menu_camera.current = false
+	menu_camera.visible = false
+	title_off.visible = false
+	title_on.visible = false
+	game_comp.visible = false
+	camera.current = true
+	camera.visible = true
+	menu_screen.visible = false
+	background.modulate.a = 0.0
+	start_fade_in(background)
+	radio.start_radio()
+	dialog = Dialogic.start(scene)
 	call_deferred("add_child",dialog)
 	
 func call_ending(ending):
@@ -138,8 +224,13 @@ func _process(delta):
 		shake_offset = get_noise_offset(delta, NOISE_SHAKE_SPEED, NOISE_SHAKE_STRENGTH)
 	camera.offset = shake_offset
 	cur_offset = shake_offset
-	if Input.is_action_just_pressed("ui_page_down"):
-		damage_sanity()
+	
+	####REMOVE ON END DEBUG
+	if Input.is_action_just_pressed("escape"):
+		show_back_to_menu()
+		if is_instance_valid(dialog):
+			dialog.queue_free()
+			play_again()
 	
 func damage_sanity():
 	shake = "SHAKE"
@@ -166,14 +257,23 @@ func get_shake_offset():
 
 func player_name_capture():
 	var user_input = user_input_scene.instance()
+	user_input.update_lang(language)
 	var input_box  = user_input.get_node("CanvasLayer/userInput/input")
-	input_box.placeholder_text = "What's my name again?"
+	if language == 'en':
+		input_box.placeholder_text = "What's my name again?"
+	elif language == 'fr':
+		input_box.placeholder_text = "Je m'appelle…"
 	user_input.connect('user_input_completed',self,"update_user_name")
 	get_tree().root.add_child(user_input)
 
 func update_user_name(name):
 	Dialogic.set_variable('player_name',name)
-	var tutorial_2 = Dialogic.start('Tutorial pt.2')
+	var timeline
+	if language == 'en':
+		timeline = 'Tutorial pt.2'
+	elif language == 'fr':
+		timeline = 'Tutorial pt.2_fr'
+	var tutorial_2 = Dialogic.start(timeline)
 	dialog = tutorial_2
 	add_child(tutorial_2)
 

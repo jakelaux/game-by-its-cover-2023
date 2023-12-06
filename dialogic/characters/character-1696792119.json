@@ -1,19 +1,19 @@
 {
 	"color": "#ffffffff",
 	"description": "",
-	"display_name": "Becky",
+	"display_name": "Cliente",
 	"display_name_bool": true,
-	"id": "character-1690745174.json",
+	"id": "character-1696792119.json",
 	"mirror_portraits": false,
-	"name": "Becky",
-	"nickname": "Cliente",
+	"name": "Psychic_fr",
+	"nickname": "",
 	"nickname_bool": false,
 	"offset_x": 0,
 	"offset_y": -50,
 	"portraits": [
 		{
 			"name": "Default",
-			"path": "res://Assets/Portraits/Becky_v02.png"
+			"path": "res://Assets/Portraits/Psychic_v02.png"
 		}
 	],
 	"scale": 28,
